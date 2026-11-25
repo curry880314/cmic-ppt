@@ -1,95 +1,125 @@
-# cmic-ppt
+# cmic-ppt —— 企业模板化原生 PPT 生成 Skill
 
-面向企业汇报、技术方案与行业峰会的**模板化原生 PPTX 生成 Skill**。专为同时兼容 **DeepSeek / GLM 等轻量模型** 与 **强模型** 而设计：模型只负责定文字与选版式（输出标准 `deck.json`），所有坐标、自动换行、`**重点套色**`、母版继承、像素级防溢出门禁与 `.pptx` 编译均由 `scripts/ppt_cli.py` 自动完成。
+面向企业内部汇报、技术架构方案与行业峰会的 **开箱即用 AI PPT 生成 Skill**（已完整内嵌精简版编译与质检引擎，**无需再单独安装其他 Skill**）。
 
-## 内置模板（按模板分治，可插拔扩展）
+核心设计理念是**“人定内容，脚本管排版”**：AI 只需要帮你提炼大纲、选模板版式并输出一份结构化文字稿（`deck.json`）；所有的坐标对齐、中英文自动换行、重点套色、像素级防爆框检查、原生 PowerPoint 母版编译全部由本地脚本自动完成。因此不仅适用于强模型，在 **WorkBuddy + DeepSeek / GLM** 等轻量模型下同样稳定不跑版。
 
-| 模板 ID | 风格名称 | 适用场景 | 内置版式数 |
+---
+
+## 一、这个 Skill 有哪些核心功能
+
+1. **旧文档素材自动提取**：支持直接丢入旧 `.pptx`、`.docx`、`.pdf`，自动抽取文字结构与图片素材，免去手工搬运。
+2. **先审逐页大纲，再动工排版**：默认先输出《逐页文字与版式确认表》，你改完字、拍板后再一键生成 PPT，避免 AI 闷头做十几页不合心意的废稿。
+3. **自动换行 + `**重点套色**`**：写文字时只需要用 `**重点词**` 标注，脚本自动按模板规范套红/套金加粗，并遵循中文避头尾标点规则自动换行。
+4. **像素级防溢出质检门禁**：编译前自动校验每一页的真实字宽与容器边界，发现超字、撑爆卡片或漏填占位符时直接给出中文精简提示，由 AI 自动改短重编。
+5. **真·原生可编辑 `.pptx`（带真实 Slide Master 母版）**：不是把整页糊成图片！导出的 `.pptx` 用 PowerPoint 或 WPS 打开后，所有标题、正文、卡片、图标、配图均可自由选中、改字、挪位。
+6. **自动导出逐页预览图（Windows）**：本机装有 WPS 演示或 Microsoft PowerPoint 时，编译可自动导出每页 PNG 预览图，方便快速验收。
+
+---
+
+## 二、内置 3 套企业模板
+
+| 模板 ID | 风格名称 | 适用场景 | 内置版式与特色 |
 |---|---|---|---|
-| `cmic-white-report` | 中移白底标准汇报风 | 日常方案、商业计划书、管理层汇报 | 7 套（封面/三栏痛点/左右对照/上总下分架构/四步真机流程/三栏价值/尾页） |
-| `cmic-dark-tech-arch` | 深蓝科技架构大屏风 | 技术架构拆解、高层大屏专题演讲 | 5 套（深蓝封面/左70%架构+右24%痛点卡/左右落差对照/四步真机展示/三栏深蓝价值） |
-| `cmic-3d-summit` | 3D 蓝玻大会视觉风 | 对外行业峰会、技术交流会、品牌发布（预置 8 枚透明 3D 图标，免生图直接用） | 4 套（四步能力+三底座/五要素横排/三节点成果背书/三阶段演进愿景） |
-| `apple-bento-light` | 苹果极简 Bento 发布会风 | 互联网/AI 产品发布、体验与流程升级方案 | 5 套（Bento封面/三栏痛点+黑英雄条/三段枢纽架构/四步真机/三栏反色价值） |
-| `mckinsey-editorial` | 顶级咨询暖纸杂志极简风 | 高层战略研判、行业调研、高密度商业与风控汇报 | 6 套（杂志封面/KPI大盘与竞品对照/三栏研判/双轨调研/三段防线/四维连接器） |
-| `cyber-obsidian-grid` | 曜石黑翠绿 AI 算力发布会风 | AI 基础设施、算力分发架构与安全风控发布会 | 5 套（曜石封面/遥测KPI大盘/三端算力矩阵/双轨场景/风控闭环） |
+| `cmic-white-report` | 中移白底标准汇报风 | 日常工作汇报、商业计划书、管理层评审 | **7 套版式**：封面、三栏痛点、左右对照、上总下分架构、四步真机流程、三栏价值、尾页 |
+| `cmic-dark-tech-arch` | 深蓝科技架构大屏风 | 技术方案拆解、架构专题、大屏汇报 | **5 套版式**：深蓝封面、左 70% 架构+右 24% 痛点卡、左右落差对照、四步真机展示、三栏深蓝价值 |
+| `cmic-3d-summit` | 3D 蓝玻大会视觉风 | 对外行业峰会、技术交流会、品牌发布 | **4 套版式**：四步能力+三底座、五要素横排、三节点成果背书、三阶段演进愿景；**预置 8 枚透明 3D 图标，免生图直接用** |
 
-## 运行环境依赖
+> 模板采用插拔式目录结构，后续随时可以往 `templates/` 里新增企业新风格，无需修改任何 Python 代码。
 
-- Python 3.10+（推荐 `python` / `py -3`）
-- 底层结构化 PPTX 编译与质检引擎：[ppt-master](https://github.com/hugohe3/ppt-master)（MIT 协议，默认自动查找 `~/.skilldock/skills/ppt-master`，或通过环境变量 `PPT_MASTER_DIR` 指定）
-- 依赖 Python 包：`python-pptx`、`XlsxWriter`、`skia-pathops`、`uharfbuzz`、`PyYAML`
-- 可选视觉预览渲染（`--render`）：Windows 下自动调用 WPS 演示（`KWPP.Application`）或 Microsoft PowerPoint COM 接口
+---
 
-## 4 步快速上手
+## 三、同事如何安装（支持 WorkBuddy / Claude Code / Codex / Antigravity）
+
+### 前置环境
+- Python 3.10 及以上（Windows 命令行输入 `python --version` 确认）
+- （可选）Windows 下已安装 WPS 演示或 Microsoft PowerPoint，可开启自动出预览图
+
+### 方式 A：在 WorkBuddy 里发一句话自动安装（推荐）
+
+> 如果本仓库为团队私有仓库，请先联系仓库管理员把你的 GitHub 账号加入访问权限（Collaborator），并确认本机 Git 已登录 GitHub。
+
+把下面这句话直接发给 WorkBuddy（或其他 AI Agent）：
+
+```text
+请帮我把仓库 https://github.com/curry880314/cmic-ppt.git 克隆安装到 ~/.workbuddy/skills/cmic-ppt，运行 pip install -r ~/.workbuddy/skills/cmic-ppt/requirements.txt 安装依赖，然后执行 python ~/.workbuddy/skills/cmic-ppt/scripts/ppt_cli.py check-env 验证安装成功。
+```
+
+### 方式 B：离线压缩包安装（无需 GitHub 账号与外网）
+
+1. 获取管理员发来的 `cmic-ppt.zip` 压缩包；
+2. 解压到 WorkBuddy 的技能目录：`C:\Users\<你的用户名>\.workbuddy\skills\cmic-ppt`（确保该目录下直接能看到 `SKILL.md`）；
+3. 在终端执行一次依赖安装与自检：
+   ```powershell
+   pip install -r "$HOME\.workbuddy\skills\cmic-ppt\requirements.txt"
+   python "$HOME\.workbuddy\skills\cmic-ppt\scripts\ppt_cli.py" check-env
+   ```
+   看到 `[OK] 环境完全就绪` 后，重启或刷新 WorkBuddy 即可生效。
+
+---
+
+## 四、同事日常怎么用（直接复制的话术）
+
+安装完成后，在 WorkBuddy 对话框里像和同事沟通一样下指令即可，**不需要记任何命令**：
+
+### 场景 1：把现有方案 / 旧 PPT 重做成新版汇报
+> 把这份文件（或直接粘贴文字）用 `cmic-ppt` 整理成 8 页汇报 PPT，风格选「中移白底标准汇报风」。**先给我输出《逐页文字与版式确认表》，等我改完字再生成 `.pptx`。**
+
+### 场景 2：从零提想法做技术架构大屏汇报
+> 用 `cmic-ppt` 的「深蓝科技架构大屏风」帮我规划一份 6 页技术架构汇报，主题是 XXX，核心亮点是 A、B、C。先出逐页文字大纲和对应版式给我确认。
+
+### 场景 3：修改某几页文字后重新出稿
+> 第 3 页太长了，帮我精简成 3 条要点；第 5 页标题改成「XXX」，然后重新生成 `.pptx` 并渲染预览图。
+
+---
+
+## 五、命令行参考（开发者 / 手动调试用）
 
 ```powershell
-# 1. 查看所有模板与可用版式
+# 1. 环境与内置引擎自检
+python scripts/ppt_cli.py check-env
+
+# 2. 查看所有内置模板与版式
 python scripts/ppt_cli.py templates
 
-# 2. 查看某模板的精确槽位名与字数上限
+# 3. 查看某个模板的精确槽位名与字数上限
 python scripts/ppt_cli.py inspect cmic-white-report
 python scripts/ppt_cli.py inspect cmic-white-report three_col_pain
 
-# 3. 按 deck.json 批量生成页面（自动初始化、拷素材、换行、**套色**）
+# 4. 从旧 PPTX / DOCX / PDF 提取文字与图片素材
+python scripts/ppt_cli.py extract "旧方案.pptx" -o work/source
+
+# 5. 根据 deck.json 一键生成全部页面 SVG（自动初始化、拷素材、换行、**套色**）
 python scripts/ppt_cli.py apply-deck work/demo work/demo/deck.json
 
-# 4. 像素级防溢出质检 + 编译带真实 PowerPoint 母版的 .pptx + 渲染预览图
+# 6. 像素级溢出质检 + 编译带真实母版的原生 .pptx + 渲染每页 PNG 预览
 python scripts/ppt_cli.py build work/demo -o work/demo/output.pptx --render
 ```
 
-## `deck.json` 示例
+---
 
-```json
-{
-  "template": "cmic-white-report",
-  "slides": [
-    {
-      "name": "01_cover",
-      "layout": "cover",
-      "data": {
-        "TITLE": "基于手机号码 ID 体系的\nToken 运营方案",
-        "SUBTITLE": "以号为根 · 一键连接大模型",
-        "AUTHOR": "中移互联网公司",
-        "DATE": "2026年11月"
-      }
-    },
-    {
-      "name": "02_closing",
-      "layout": "closing",
-      "data": {
-        "TITLE": "感谢聆听，恳请指正！",
-        "SUBTITLE": "中移互联网 · 能力创新中心",
-        "AUTHOR": "2026年11月"
-      }
-    }
-  ]
-}
-```
-
-## 目录结构
+## 六、项目目录结构
 
 ```text
 cmic-ppt/
-├── SKILL.md                      # 精简 Agent 执行协议（4 步 SOP）
-├── README.md                     # 使用与扩展说明
+├── SKILL.md                  # Agent 标准执行协议（4 步 SOP）
+├── README.md                 # 本使用说明书
+├── requirements.txt          # Python 依赖清单
 ├── scripts/
-│   └── ppt_cli.py                # 弱模型友好 CLI 引擎包装层
+│   └── ppt_cli.py            # 弱模型友好 CLI 引擎（填槽 / 换行 / 套色 / 质检 / 编译 / 提取）
+├── engine/                   # 内嵌精简版结构化 PPTX 编译与质检引擎（MIT，零外部 Skill 依赖）
 ├── references/
-│   └── custom-svg-guide.md       # 强模型自定义单页 SVG 与新增模板规范
-└── templates/
-    ├── _index.json               # 模板总索引
-    ├── cmic-white-report/        # 模板 1：中移白底汇报
-    ├── cmic-dark-tech-arch/      # 模板 2：深蓝科技架构
-    └── cmic-3d-summit/           # 模板 3：3D 蓝玻大会（含 8 枚透明 3D 图标）
+│   └── custom-svg-guide.md   # 强模型自定义单页 SVG 与扩展新模板规范
+├── templates/                # 可插拔企业模板库（当前内置 3 套）
+│   ├── _index.json
+│   ├── cmic-white-report/
+│   ├── cmic-dark-tech-arch/
+│   └── cmic-3d-summit/
+└── THIRD_PARTY_LICENSES/     # 第三方开源协议声明
 ```
 
-## 新增企业风格模板
+---
 
-无需改动任何 Python 代码，只需 3 步：
-1. 在 `templates/` 下新建 `<template-id>/` 目录，放入 `template.json`、`assets/`（母版底图/Logo/图标）与 `layouts/*.svg`；
-2. 在 `templates/_index.json` 中新增一条模板索引；
-3. 执行 `python scripts/ppt_cli.py templates` 即可生效。
+## 七、致谢与协议
 
-## 致谢与协议说明
-
-底层结构化 SVG 质检与原生 PowerPoint Slide Master 编译能力复用开源项目 `hugohe3/ppt-master`（MIT License）。
+本 Skill 内嵌 `engine/` 目录中的结构化 SVG 质检、文档提取与原生 PowerPoint Slide Master 编译核心复用开源项目 [hugohe3/ppt-master](https://github.com/hugohe3/ppt-master)（MIT License），完整许可证见 [THIRD_PARTY_LICENSES/ppt-master-LICENSE.txt](THIRD_PARTY_LICENSES/ppt-master-LICENSE.txt)。

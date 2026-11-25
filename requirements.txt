@@ -1,0 +1,12 @@
+# cmic-ppt 核心运行依赖（生成与编译原生 PPTX 必需）
+python-pptx>=1.0.0
+lxml>=4.9.0
+Pillow>=10.0.0
+XlsxWriter>=3.1.0
+PyYAML>=6.0
+uharfbuzz>=0.37.0
+
+# 可选增强依赖（提取 Word / PDF / Excel 旧文档素材时按需安装）
+# mammoth>=1.6.0
+# PyMuPDF>=1.23.0
+# openpyxl>=3.1.0

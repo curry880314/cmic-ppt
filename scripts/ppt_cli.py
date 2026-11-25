@@ -58,6 +58,8 @@ def utf8_env() -> dict[str, str]:
 
 def find_ppt_master() -> Path:
     candidates: list[Path] = []
+    # 1. 优先使用 Skill 内嵌的独立精简编译引擎（实现零外部 Skill 依赖、开箱即用）
+    candidates.append(SKILL_ROOT / "engine")
     env_dir = os.environ.get("PPT_MASTER_DIR")
     if env_dir:
         candidates.append(Path(env_dir))
@@ -74,8 +76,8 @@ def find_ppt_master() -> Path:
         ):
             return cand
     die(
-        "未找到底层编译引擎 ppt-master。请确认已安装到 "
-        "~/.skilldock/skills/ppt-master，或通过环境变量 PPT_MASTER_DIR 指定路径。"
+        "未找到内嵌编译引擎 engine/scripts/，也未找到外部 ppt-master。"
+        "请确认完整拉取了 cmic-ppt 仓库，或通过环境变量 PPT_MASTER_DIR 指定路径。"
     )
     raise AssertionError("unreachable")
 
@@ -1019,12 +1021,68 @@ def cmd_extract(args: argparse.Namespace) -> None:
     print(f"[OK] 提取完成 -> {out_dir}")
 
 
+def cmd_check_env(args: argparse.Namespace) -> None:
+    import importlib
+
+    print("=== cmic-ppt 运行环境自检 ===")
+    py_ver = f"{sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}"
+    py_ok = sys.version_info >= (3, 10)
+    print(f"[{'OK' if py_ok else 'FAIL'}] Python 版本: {py_ver} (要求 >= 3.10)")
+
+    engine_dir = find_ppt_master()
+    is_bundled = engine_dir.resolve() == (SKILL_ROOT / "engine").resolve()
+    print(f"[OK] 编译引擎: {engine_dir} ({'内置独立引擎' if is_bundled else '外部引擎'})")
+
+    required_mods = [
+        ("pptx", "python-pptx"),
+        ("lxml", "lxml"),
+        ("PIL", "Pillow"),
+        ("xlsxwriter", "XlsxWriter"),
+        ("yaml", "PyYAML"),
+    ]
+    optional_mods = [
+        ("uharfbuzz", "uharfbuzz（高精度字体测宽，建议安装）"),
+        ("pathops", "skia-pathops（布尔路径支持，可选）"),
+        ("mammoth", "mammoth（提取 Word .docx 文档，可选）"),
+        ("fitz", "PyMuPDF（提取 PDF 文档，可选）"),
+        ("openpyxl", "openpyxl（提取 Excel 表格，可选）"),
+    ]
+
+    missing_req: list[str] = []
+    for mod, pkg in required_mods:
+        try:
+            importlib.import_module(mod)
+            print(f"[OK] 必需依赖: {pkg}")
+        except ImportError:
+            print(f"[FAIL] 缺少必需依赖: {pkg}")
+            missing_req.append(pkg)
+
+    for mod, desc in optional_mods:
+        try:
+            importlib.import_module(mod)
+            print(f"[OK] 增强依赖: {desc}")
+        except ImportError:
+            print(f"[INFO] 未安装增强依赖: {desc}")
+
+    tpls = load_index()
+    print(f"[OK] 已加载模板数: {len(tpls)} ({', '.join(t['id'] for t in tpls)})")
+
+    if not py_ok or missing_req:
+        req_file = SKILL_ROOT / "requirements.txt"
+        print(f"\n请先运行以下命令补齐依赖：\n  pip install -r \"{req_file}\"")
+        sys.exit(1)
+    print("\n[OK] 环境完全就绪，可以开始生成原生 PPTX！")
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="ppt_cli.py",
         description="cmic-ppt：模板驱动的企业原生 PPTX 生成 CLI（兼容轻量模型）",
     )
     sub = parser.add_subparsers(dest="command", required=True)
+
+    p_chk = sub.add_parser("check-env", help="自检 Python 环境、内嵌引擎与依赖包是否就绪")
+    p_chk.set_defaults(func=cmd_check_env)
 
     p_tpl = sub.add_parser("templates", help="列出所有可用模板、版式和内置 3D 图标")
     p_tpl.add_argument("--json", action="store_true", help="输出 JSON 格式")
