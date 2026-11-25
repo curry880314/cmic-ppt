@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+  lang="zh-CN" width="1280" height="720" viewBox="0 0 1280 720"
+  font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif"
+  data-pptx-master="cmic_dark_arch_master" data-pptx-master-name="CMIC Dark Arch"
+  data-pptx-layout="content" data-pptx-layout-name="Dark Architecture">
+  <defs>
+    <linearGradient id="darkLeftPanelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#13386B" stop-opacity="0.72" />
+      <stop offset="100%" stop-color="#091D3D" stop-opacity="0.86" />
+    </linearGradient>
+    <linearGradient id="darkMidArrowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2D547E" />
+      <stop offset="100%" stop-color="#DCEAF9" />
+    </linearGradient>
+    <linearGradient id="darkConeGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#00B0F0" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#00B0F0" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <image id="dark-arch-bg" x="0" y="0" width="1280" height="720"
+    href="../images/bg_dark_tech.png" preserveAspectRatio="none"
+    data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="dark-arch-top-line" x="140" y="108" width="1000" height="2" fill="#65BCEB" fill-opacity="0.55"
+    data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="dark-arch-bot-line" x="140" y="196" width="1000" height="1.5" fill="#408FB3" fill-opacity="0.5"
+    data-pptx-layer="master" data-pptx-editable="false"/>
+
+  <g id="content-title-slot" data-pptx-placeholder="title" data-pptx-bounds="64 26 1152 68">
+    <text id="content-title-carrier" data-pptx-carrier="true" x="640" y="76" text-anchor="middle" fill="#FFFFFF" font-size="33" font-weight="700">{{TITLE}}</text>
+  </g>
+  <g id="content-takeaway-slot" data-pptx-placeholder="body" data-pptx-idx="1" data-pptx-bounds="80 116 1120 74">
+    <text id="content-takeaway-carrier" data-pptx-carrier="true" x="640" y="144" text-anchor="middle" fill="#F4F7FC" font-size="18.5" font-weight="700">{{TAKEAWAY}}</text>
+  </g>
+
+  <g id="content-object-slot" data-pptx-placeholder="object" data-pptx-idx="2" data-pptx-binding="proxy" data-pptx-bounds="32 212 1216 474">
+    <!-- 左侧 70% 主架构大框 -->
+    <rect x="32" y="216" width="844" height="462" rx="28" fill="url(#darkLeftPanelGrad)" stroke="#4A98D1" stroke-width="1.5" />
+    <text x="454" y="254" font-size="21" font-weight="700" fill="#6ED5FF" text-anchor="middle">{{PANEL_TITLE}}</text>
+
+    <!-- 列1 -->
+    <rect x="52" y="274" width="258" height="278" rx="12" fill="#0D2545" fill-opacity="0.88" stroke="#408FB3" stroke-width="1.2" />
+    <rect x="52" y="274" width="258" height="38" rx="10" fill="#174074" stroke="#408FB3" stroke-width="1" />
+    <text x="181" y="299" font-size="16" font-weight="700" fill="#6ED5FF" text-anchor="middle">{{COL1_H}}</text>
+    <text x="68" y="338" font-size="14" font-weight="700" fill="#FFC52B">{{COL1_T1}}</text>
+    <text x="68" y="358" font-size="12.5" fill="#DCE8F8">{{COL1_B1}}</text>
+    <line x1="68" y1="392" x2="294" y2="392" stroke="#315C80" stroke-width="1" />
+    <text x="68" y="416" font-size="14" font-weight="700" fill="#FFC52B">{{COL1_T2}}</text>
+    <text x="68" y="436" font-size="12.5" fill="#DCE8F8">{{COL1_B2}}</text>
+    <line x1="68" y1="470" x2="294" y2="470" stroke="#315C80" stroke-width="1" />
+    <text x="68" y="494" font-size="14" font-weight="700" fill="#FFC52B">{{COL1_T3}}</text>
+    <text x="68" y="514" font-size="12.5" fill="#DCE8F8">{{COL1_B3}}</text>
+
+    <!-- 列2 -->
+    <rect x="325" y="274" width="258" height="278" rx="12" fill="#0D2545" fill-opacity="0.88" stroke="#408FB3" stroke-width="1.2" />
+    <rect x="325" y="274" width="258" height="38" rx="10" fill="#174074" stroke="#408FB3" stroke-width="1" />
+    <text x="454" y="299" font-size="16" font-weight="700" fill="#6ED5FF" text-anchor="middle">{{COL2_H}}</text>
+    <text x="341" y="338" font-size="14" font-weight="700" fill="#FFC52B">{{COL2_T1}}</text>
+    <text x="341" y="358" font-size="12.5" fill="#DCE8F8">{{COL2_B1}}</text>
+    <line x1="341" y1="392" x2="567" y2="392" stroke="#315C80" stroke-width="1" />
+    <text x="341" y="416" font-size="14" font-weight="700" fill="#FFC52B">{{COL2_T2}}</text>
+    <text x="341" y="436" font-size="12.5" fill="#DCE8F8">{{COL2_B2}}</text>
+    <line x1="341" y1="470" x2="567" y2="470" stroke="#315C80" stroke-width="1" />
+    <text x="341" y="494" font-size="14" font-weight="700" fill="#FFC52B">{{COL2_T3}}</text>
+    <text x="341" y="514" font-size="12.5" fill="#DCE8F8">{{COL2_B3}}</text>
+
+    <!-- 列3 -->
+    <rect x="598" y="274" width="258" height="278" rx="12" fill="#0D2545" fill-opacity="0.88" stroke="#408FB3" stroke-width="1.2" />
+    <rect x="598" y="274" width="258" height="38" rx="10" fill="#174074" stroke="#408FB3" stroke-width="1" />
+    <text x="727" y="299" font-size="16" font-weight="700" fill="#6ED5FF" text-anchor="middle">{{COL3_H}}</text>
+    <text x="614" y="338" font-size="14" font-weight="700" fill="#FFC52B">{{COL3_T1}}</text>
+    <text x="614" y="358" font-size="12.5" fill="#DCE8F8">{{COL3_B1}}</text>
+    <line x1="614" y1="392" x2="840" y2="392" stroke="#315C80" stroke-width="1" />
+    <text x="614" y="416" font-size="14" font-weight="700" fill="#FFC52B">{{COL3_T2}}</text>
+    <text x="614" y="436" font-size="12.5" fill="#DCE8F8">{{COL3_B2}}</text>
+    <line x1="614" y1="470" x2="840" y2="470" stroke="#315C80" stroke-width="1" />
+    <text x="614" y="494" font-size="14" font-weight="700" fill="#FFC52B">{{COL3_T3}}</text>
+    <text x="614" y="514" font-size="12.5" fill="#DCE8F8">{{COL3_B3}}</text>
+
+    <!-- 底部微光基座 -->
+    <polygon points="310,582 598,582 454,556" fill="url(#darkConeGrad)" />
+    <rect x="52" y="582" width="804" height="78" rx="12" fill="#0B2040" fill-opacity="0.92" stroke="#408FB3" stroke-width="1.2" />
+    <text x="150" y="616" font-size="16" font-weight="700" fill="#FFC52B" text-anchor="middle">{{BASE_T}}</text>
+    <text x="150" y="640" font-size="12" fill="#6ED5FF" text-anchor="middle">{{BASE_SUB}}</text>
+
+    <rect x="242" y="596" width="160" height="50" rx="8" fill="#132F50" stroke="#408FB3" stroke-width="1" />
+    <text x="322" y="618" font-size="14" font-weight="700" fill="#F4F7FC" text-anchor="middle">{{F1_T}}</text>
+    <text x="322" y="638" font-size="11.5" fill="#65BCEB" text-anchor="middle">{{F1_D}}</text>
+
+    <text x="418" y="628" font-size="20" font-weight="700" fill="#65BCEB" text-anchor="middle">+</text>
+
+    <rect x="434" y="596" width="160" height="50" rx="8" fill="#132F50" stroke="#408FB3" stroke-width="1" />
+    <text x="514" y="618" font-size="14" font-weight="700" fill="#F4F7FC" text-anchor="middle">{{F2_T}}</text>
+    <text x="514" y="638" font-size="11.5" fill="#65BCEB" text-anchor="middle">{{F2_D}}</text>
+
+    <text x="610" y="628" font-size="20" font-weight="700" fill="#65BCEB" text-anchor="middle">+</text>
+
+    <rect x="626" y="596" width="212" height="50" rx="8" fill="#132F50" stroke="#FFC52B" stroke-width="1.2" />
+    <text x="732" y="618" font-size="14" font-weight="700" fill="#FFC52B" text-anchor="middle">{{F3_T}}</text>
+    <text x="732" y="638" font-size="11.5" fill="#DCE8F8" text-anchor="middle">{{F3_D}}</text>
+
+    <!-- 中间过渡渐变大箭头 -->
+    <text x="920" y="418" font-size="16" font-weight="700" fill="#FFC52B" text-anchor="middle">{{ARROW_LABEL}}</text>
+    <polygon points="884,436 934,436 934,424 956,447 934,470 934,458 884,458" fill="url(#darkMidArrowGrad)" />
+
+    <!-- 右侧 24% 攻克痛点深蓝卡 -->
+    <rect x="966" y="216" width="282" height="462" rx="22" fill="#10254B" fill-opacity="0.86" stroke="#315C80" stroke-width="1.4" />
+    <text x="1107" y="264" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{RIGHT_TITLE}}</text>
+    <line x1="992" y1="346" x2="1222" y2="346" stroke="#315C80" stroke-width="1" />
+
+    <text x="988" y="382" font-size="15.5" font-weight="700" fill="#FFC52B">{{R1_T}}</text>
+    <text x="988" y="406" font-size="13.5" fill="#F4F7FC">{{R1_B}}</text>
+
+    <text x="988" y="484" font-size="15.5" font-weight="700" fill="#FFC52B">{{R2_T}}</text>
+    <text x="988" y="508" font-size="13.5" fill="#F4F7FC">{{R2_B}}</text>
+
+    <text x="988" y="586" font-size="15.5" font-weight="700" fill="#FFC52B">{{R3_T}}</text>
+    <text x="988" y="610" font-size="13.5" fill="#F4F7FC">{{R3_B}}</text>
+  </g>
+
+  <g id="content-slide-number-slot" data-pptx-placeholder="slide-number" data-pptx-idx="3" data-pptx-bounds="1208 682 56 32">
+    <text id="content-slide-number-carrier" data-pptx-carrier="true" x="1256" y="704" text-anchor="end" fill="#C7D9EC" font-family="Arial, sans-serif" font-size="15" font-weight="700">{{PAGE_NUM}}</text>
+  </g>
+</svg>

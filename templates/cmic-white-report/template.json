@@ -1,0 +1,144 @@
+{
+  "id": "cmic-white-report",
+  "name": "中移白底标准汇报风",
+  "canvas": "1280x720",
+  "accent_color": "#C00000",
+  "secondary_accent": "#0070C0",
+  "layouts": {
+    "cover": {
+      "file": "cover.svg",
+      "description": "中移白底蓝绿波浪封面页",
+      "slots": {
+        "TITLE": {"type": "multiline", "max_chars": 26, "chars_per_line": 14, "max_lines": 2, "dy": 60, "hint": "主标题（可两行）"},
+        "SUBTITLE": {"type": "text", "max_chars": 36, "hint": "副标题（可选，不需要传空串）"},
+        "AUTHOR": {"type": "text", "max_chars": 20, "hint": "汇报单位"},
+        "DATE": {"type": "text", "max_chars": 20, "hint": "日期，如 2026年11月"}
+      }
+    },
+    "three_col_pain": {
+      "file": "three_col_pain.svg",
+      "description": "三栏痛点/分类对比（蓝/绿/橙顶条，每栏3条）+ 底部公式总结条",
+      "slots": {
+        "TITLE": {"type": "text", "max_chars": 30, "hint": "页眉章节号+主标题"},
+        "TAKEAWAY": {"type": "multiline", "max_chars": 76, "chars_per_line": 39, "max_lines": 2, "dy": 28, "hint": "中心结论句（支持 **套红**）"},
+        "COL1_HEADER": {"type": "text", "max_chars": 12, "hint": "第1栏顶条标题（蓝）"},
+        "COL1_T1": {"type": "text", "max_chars": 14}, "COL1_B1": {"type": "multiline", "max_chars": 38, "chars_per_line": 20, "max_lines": 2, "dy": 22},
+        "COL1_T2": {"type": "text", "max_chars": 14}, "COL1_B2": {"type": "multiline", "max_chars": 38, "chars_per_line": 20, "max_lines": 2, "dy": 22},
+        "COL1_T3": {"type": "text", "max_chars": 14}, "COL1_B3": {"type": "multiline", "max_chars": 38, "chars_per_line": 20, "max_lines": 2, "dy": 22},
+        "COL2_HEADER": {"type": "text", "max_chars": 12, "hint": "第2栏顶条标题（绿）"},
+        "COL2_T1": {"type": "text", "max_chars": 14}, "COL2_B1": {"type": "multiline", "max_chars": 38, "chars_per_line": 20, "max_lines": 2, "dy": 22},
+        "COL2_T2": {"type": "text", "max_chars": 14}, "COL2_B2": {"type": "multiline", "max_chars": 38, "chars_per_line": 20, "max_lines": 2, "dy": 22},
+        "COL2_T3": {"type": "text", "max_chars": 14}, "COL2_B3": {"type": "multiline", "max_chars": 38, "chars_per_line": 20, "max_lines": 2, "dy": 22},
+        "COL3_HEADER": {"type": "text", "max_chars": 12, "hint": "第3栏顶条标题（橙）"},
+        "COL3_T1": {"type": "text", "max_chars": 14}, "COL3_B1": {"type": "multiline", "max_chars": 38, "chars_per_line": 20, "max_lines": 2, "dy": 22},
+        "COL3_T2": {"type": "text", "max_chars": 14}, "COL3_B2": {"type": "multiline", "max_chars": 38, "chars_per_line": 20, "max_lines": 2, "dy": 22},
+        "COL3_T3": {"type": "text", "max_chars": 14}, "COL3_B3": {"type": "multiline", "max_chars": 38, "chars_per_line": 20, "max_lines": 2, "dy": 22},
+        "FORMULA_TAG": {"type": "multiline", "max_chars": 10, "chars_per_line": 5, "max_lines": 2, "dy": 22, "hint": "左下蓝块标签"},
+        "STEP1_T": {"type": "text", "max_chars": 8}, "STEP1_D": {"type": "text", "max_chars": 10},
+        "STEP2_T": {"type": "text", "max_chars": 8}, "STEP2_D": {"type": "text", "max_chars": 10},
+        "STEP3_T": {"type": "text", "max_chars": 8}, "STEP3_D": {"type": "text", "max_chars": 10},
+        "RESULT_T": {"type": "text", "max_chars": 16}, "RESULT_D": {"type": "text", "max_chars": 16},
+        "SOURCE": {"type": "text", "max_chars": 50, "default": ""},
+        "PAGE_NUM": {"type": "text", "max_chars": 4, "default": ""}
+      }
+    },
+    "two_col_arrow": {
+      "file": "two_col_arrow.svg",
+      "description": "左右双栏对照/因果推导 + 中间箭头 + 底部收束横幅（每栏3条）",
+      "slots": {
+        "TITLE": {"type": "text", "max_chars": 30},
+        "TAKEAWAY": {"type": "multiline", "max_chars": 76, "chars_per_line": 39, "max_lines": 2, "dy": 28},
+        "LEFT_HEADER": {"type": "text", "max_chars": 24, "hint": "左栏蓝条标题"},
+        "L1_T": {"type": "text", "max_chars": 24}, "L1_B": {"type": "multiline", "max_chars": 52, "chars_per_line": 30, "max_lines": 2, "dy": 20},
+        "L2_T": {"type": "text", "max_chars": 24}, "L2_B": {"type": "multiline", "max_chars": 52, "chars_per_line": 30, "max_lines": 2, "dy": 20},
+        "L3_T": {"type": "text", "max_chars": 24}, "L3_B": {"type": "multiline", "max_chars": 52, "chars_per_line": 30, "max_lines": 2, "dy": 20},
+        "ARROW_LABEL": {"type": "text", "max_chars": 4, "hint": "中间箭头字，如 风险 / 落差 / 驱动"},
+        "RIGHT_HEADER": {"type": "text", "max_chars": 24, "hint": "右栏橙/红条标题"},
+        "R1_TAG": {"type": "text", "max_chars": 6}, "R1_T": {"type": "text", "max_chars": 18}, "R1_B": {"type": "text", "max_chars": 24},
+        "R2_TAG": {"type": "text", "max_chars": 6}, "R2_T": {"type": "text", "max_chars": 18}, "R2_B": {"type": "text", "max_chars": 24},
+        "R3_TAG": {"type": "text", "max_chars": 6}, "R3_T": {"type": "text", "max_chars": 18}, "R3_B": {"type": "text", "max_chars": 24},
+        "BOTTOM_TAG": {"type": "multiline", "max_chars": 10, "chars_per_line": 5, "max_lines": 2, "dy": 22},
+        "BOTTOM_L1": {"type": "text", "max_chars": 44},
+        "BOTTOM_L2": {"type": "text", "max_chars": 46},
+        "SOURCE": {"type": "text", "max_chars": 50, "default": ""},
+        "PAGE_NUM": {"type": "text", "max_chars": 4, "default": ""}
+      }
+    },
+    "top_bottom_arch": {
+      "file": "top_bottom_arch.svg",
+      "description": "上总下分架构页：顶栏方案定位 + 左下四步流程链 + 右下三支柱闭环 + 底部总结条",
+      "slots": {
+        "TITLE": {"type": "text", "max_chars": 30},
+        "TAKEAWAY": {"type": "multiline", "max_chars": 76, "chars_per_line": 39, "max_lines": 2, "dy": 28},
+        "TOP_TAG": {"type": "text", "max_chars": 6}, "TOP_SUB": {"type": "text", "max_chars": 8},
+        "TOP_TITLE": {"type": "text", "max_chars": 34},
+        "TOP_DESC": {"type": "text", "max_chars": 54},
+        "LEFT_HEADER": {"type": "text", "max_chars": 26},
+        "S1_T": {"type": "text", "max_chars": 6}, "S1_D": {"type": "text", "max_chars": 8},
+        "S2_T": {"type": "text", "max_chars": 6}, "S2_D": {"type": "text", "max_chars": 8},
+        "S3_T": {"type": "text", "max_chars": 6}, "S3_D": {"type": "text", "max_chars": 8},
+        "S4_T": {"type": "text", "max_chars": 6}, "S4_D": {"type": "text", "max_chars": 8},
+        "LEFT_FOOT": {"type": "text", "max_chars": 34},
+        "RIGHT_HEADER": {"type": "text", "max_chars": 26},
+        "P1_T": {"type": "text", "max_chars": 6}, "P1_D": {"type": "multiline", "max_chars": 18, "chars_per_line": 9, "max_lines": 2, "dy": 24},
+        "P2_T": {"type": "text", "max_chars": 6}, "P2_D": {"type": "multiline", "max_chars": 18, "chars_per_line": 9, "max_lines": 2, "dy": 24},
+        "P3_T": {"type": "text", "max_chars": 6}, "P3_D": {"type": "multiline", "max_chars": 18, "chars_per_line": 9, "max_lines": 2, "dy": 24},
+        "RIGHT_FOOT": {"type": "text", "max_chars": 34},
+        "BOTTOM_TAG": {"type": "multiline", "max_chars": 10, "chars_per_line": 5, "max_lines": 2, "dy": 22},
+        "BOTTOM_L1": {"type": "text", "max_chars": 44},
+        "BOTTOM_L2": {"type": "text", "max_chars": 46},
+        "SOURCE": {"type": "text", "max_chars": 50, "default": ""},
+        "PAGE_NUM": {"type": "text", "max_chars": 4, "default": ""}
+      }
+    },
+    "four_step_ui": {
+      "file": "four_step_ui.svg",
+      "description": "四步真机截图/交互流程页 + 底部四格衔接蓝条 + 双底座服务",
+      "slots": {
+        "TITLE": {"type": "text", "max_chars": 30},
+        "TAKEAWAY": {"type": "text", "max_chars": 46},
+        "S1_T": {"type": "text", "max_chars": 10}, "IMG_1": {"type": "image"}, "S1_D": {"type": "multiline", "max_chars": 32, "chars_per_line": 17, "max_lines": 2, "dy": 20},
+        "S2_T": {"type": "text", "max_chars": 10}, "IMG_2": {"type": "image"}, "S2_D": {"type": "multiline", "max_chars": 32, "chars_per_line": 17, "max_lines": 2, "dy": 20},
+        "S3_T": {"type": "text", "max_chars": 10}, "IMG_3": {"type": "image"}, "S3_D": {"type": "multiline", "max_chars": 32, "chars_per_line": 17, "max_lines": 2, "dy": 20},
+        "S4_T": {"type": "text", "max_chars": 10}, "IMG_4": {"type": "image"}, "S4_D": {"type": "multiline", "max_chars": 32, "chars_per_line": 17, "max_lines": 2, "dy": 20},
+        "BRIDGE_TITLE": {"type": "text", "max_chars": 14},
+        "B1": {"type": "text", "max_chars": 10}, "B2": {"type": "text", "max_chars": 10}, "B3": {"type": "text", "max_chars": 10}, "B4": {"type": "text", "max_chars": 10},
+        "BASE_LABEL": {"type": "text", "max_chars": 10},
+        "BASE_1": {"type": "text", "max_chars": 16}, "BASE_2": {"type": "text", "max_chars": 16},
+        "SOURCE": {"type": "text", "max_chars": 50, "default": ""},
+        "PAGE_NUM": {"type": "text", "max_chars": 4, "default": ""}
+      }
+    },
+    "three_col_value": {
+      "file": "three_col_value.svg",
+      "description": "三栏共赢价值页（顶置蓝胶囊标题 + 每栏3组小标与套红正文）",
+      "slots": {
+        "TITLE": {"type": "text", "max_chars": 30},
+        "TAKEAWAY": {"type": "multiline", "max_chars": 76, "chars_per_line": 39, "max_lines": 2, "dy": 28},
+        "C1_H": {"type": "text", "max_chars": 10},
+        "C1_T1": {"type": "text", "max_chars": 16}, "C1_B1": {"type": "multiline", "max_chars": 54, "chars_per_line": 20, "max_lines": 3, "dy": 23},
+        "C1_T2": {"type": "text", "max_chars": 16}, "C1_B2": {"type": "multiline", "max_chars": 54, "chars_per_line": 20, "max_lines": 3, "dy": 23},
+        "C1_T3": {"type": "text", "max_chars": 16}, "C1_B3": {"type": "multiline", "max_chars": 54, "chars_per_line": 20, "max_lines": 3, "dy": 23},
+        "C2_H": {"type": "text", "max_chars": 10},
+        "C2_T1": {"type": "text", "max_chars": 16}, "C2_B1": {"type": "multiline", "max_chars": 54, "chars_per_line": 20, "max_lines": 3, "dy": 23},
+        "C2_T2": {"type": "text", "max_chars": 16}, "C2_B2": {"type": "multiline", "max_chars": 54, "chars_per_line": 20, "max_lines": 3, "dy": 23},
+        "C2_T3": {"type": "text", "max_chars": 16}, "C2_B3": {"type": "multiline", "max_chars": 54, "chars_per_line": 20, "max_lines": 3, "dy": 23},
+        "C3_H": {"type": "text", "max_chars": 10},
+        "C3_T1": {"type": "text", "max_chars": 16}, "C3_B1": {"type": "multiline", "max_chars": 54, "chars_per_line": 20, "max_lines": 3, "dy": 23},
+        "C3_T2": {"type": "text", "max_chars": 16}, "C3_B2": {"type": "multiline", "max_chars": 54, "chars_per_line": 20, "max_lines": 3, "dy": 23},
+        "C3_T3": {"type": "text", "max_chars": 16}, "C3_B3": {"type": "multiline", "max_chars": 54, "chars_per_line": 20, "max_lines": 3, "dy": 23},
+        "SOURCE": {"type": "text", "max_chars": 50, "default": ""},
+        "PAGE_NUM": {"type": "text", "max_chars": 4, "default": ""}
+      }
+    },
+    "closing": {
+      "file": "closing.svg",
+      "description": "中移白底结束致谢页",
+      "slots": {
+        "TITLE": {"type": "text", "max_chars": 16, "default": "感谢聆听，恳请指正！"},
+        "SUBTITLE": {"type": "text", "max_chars": 32, "default": ""},
+        "AUTHOR": {"type": "text", "max_chars": 20, "default": "中移互联网有限公司"}
+      }
+    }
+  }
+}

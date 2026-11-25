@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "templates": [
+    {
+      "id": "cmic-white-report",
+      "name": "中移白底标准汇报风",
+      "description": "纯白底 + 中国移动 Logo + 蓝红中心结论句 + 多色结构化卡片与公式条；适合日常汇报、商业计划书、管理层评审。",
+      "path": "cmic-white-report"
+    },
+    {
+      "id": "cmic-dark-tech-arch",
+      "name": "深蓝科技架构大屏风",
+      "description": "深海蓝星空底图 + 微光线居中导语 + 冰青描边深蓝大架构框 + 金字重点标注与右侧攻克痛点卡；适合技术方案、高层大屏演讲。",
+      "path": "cmic-dark-tech-arch"
+    },
+    {
+      "id": "cmic-3d-summit",
+      "name": "3D 蓝玻大会视觉风",
+      "description": "深蓝光效大会顶栏 + 浅冰蓝舞台底图 + 半透明玻璃卡片 + 预置 8 枚透明 3D 蓝玻图标（免生图直接选）；适合行业交流会、对外发布。",
+      "path": "cmic-3d-summit"
+    }
+  ]
+}

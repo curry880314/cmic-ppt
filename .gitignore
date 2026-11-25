@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# Generated test outputs & previews
+work/
+output/
+*.pptx
+!templates/**/preview.pptx
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/

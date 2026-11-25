@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+  lang="zh-CN" width="1280" height="720" viewBox="0 0 1280 720"
+  font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif"
+  data-pptx-master="cmic_dark_arch_master" data-pptx-master-name="CMIC Dark Arch"
+  data-pptx-layout="content" data-pptx-layout-name="Dark Architecture">
+  <defs>
+    <linearGradient id="darkShowcasePanelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#13386B" stop-opacity="0.72" />
+      <stop offset="100%" stop-color="#091D3D" stop-opacity="0.86" />
+    </linearGradient>
+    <linearGradient id="darkShowcaseConeGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#00B0F0" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#00B0F0" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <image id="dark-arch-bg" x="0" y="0" width="1280" height="720"
+    href="../images/bg_dark_tech.png" preserveAspectRatio="none"
+    data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="dark-arch-top-line" x="140" y="108" width="1000" height="2" fill="#65BCEB" fill-opacity="0.55"
+    data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="dark-arch-bot-line" x="140" y="196" width="1000" height="1.5" fill="#408FB3" fill-opacity="0.5"
+    data-pptx-layer="master" data-pptx-editable="false"/>
+
+  <g id="content-title-slot" data-pptx-placeholder="title" data-pptx-bounds="64 26 1152 68">
+    <text id="content-title-carrier" data-pptx-carrier="true" x="640" y="76" text-anchor="middle" fill="#FFFFFF" font-size="33" font-weight="700">{{TITLE}}</text>
+  </g>
+  <g id="content-takeaway-slot" data-pptx-placeholder="body" data-pptx-idx="1" data-pptx-bounds="80 116 1120 74">
+    <text id="content-takeaway-carrier" data-pptx-carrier="true" x="640" y="144" text-anchor="middle" fill="#F4F7FC" font-size="18.5" font-weight="700">{{TAKEAWAY}}</text>
+  </g>
+
+  <g id="content-object-slot" data-pptx-placeholder="object" data-pptx-idx="2" data-pptx-binding="proxy" data-pptx-bounds="32 212 1216 474">
+    <rect x="32" y="214" width="1216" height="466" rx="26" fill="url(#darkShowcasePanelGrad)" stroke="#4A98D1" stroke-width="1.5" />
+
+    <!-- 步骤1 -->
+    <rect x="54" y="232" width="272" height="316" rx="14" fill="#0D2545" fill-opacity="0.9" stroke="#408FB3" stroke-width="1.2" />
+    <rect x="54" y="232" width="272" height="36" rx="10" fill="#174074" stroke="#408FB3" stroke-width="1" />
+    <text x="190" y="256" font-size="15.5" font-weight="700" fill="#6ED5FF" text-anchor="middle">{{S1_T}}</text>
+    <rect x="128" y="278" width="124" height="218" rx="10" fill="#FFFFFF" stroke="#65BCEB" stroke-width="1.2" />
+    <image href="{{IMG_1}}" x="132" y="282" width="116" height="210" preserveAspectRatio="xMidYMid meet" />
+    <text x="190" y="518" font-size="12.5" fill="#DCE8F8" text-anchor="middle">{{S1_D}}</text>
+
+    <polygon points="332,378 344,378 344,372 354,385 344,398 344,392 332,392" fill="#65BCEB" />
+
+    <!-- 步骤2 -->
+    <rect x="358" y="232" width="272" height="316" rx="14" fill="#0D2545" fill-opacity="0.9" stroke="#408FB3" stroke-width="1.2" />
+    <rect x="358" y="232" width="272" height="36" rx="10" fill="#174074" stroke="#408FB3" stroke-width="1" />
+    <text x="494" y="256" font-size="15.5" font-weight="700" fill="#FFC52B" text-anchor="middle">{{S2_T}}</text>
+    <rect x="432" y="278" width="124" height="218" rx="10" fill="#FFFFFF" stroke="#65BCEB" stroke-width="1.2" />
+    <image href="{{IMG_2}}" x="436" y="282" width="116" height="210" preserveAspectRatio="xMidYMid meet" />
+    <text x="494" y="518" font-size="12.5" fill="#DCE8F8" text-anchor="middle">{{S2_D}}</text>
+
+    <polygon points="636,378 648,378 648,372 658,385 648,398 648,392 636,392" fill="#65BCEB" />
+
+    <!-- 步骤3 -->
+    <rect x="662" y="232" width="272" height="316" rx="14" fill="#0D2545" fill-opacity="0.9" stroke="#408FB3" stroke-width="1.2" />
+    <rect x="662" y="232" width="272" height="36" rx="10" fill="#174074" stroke="#408FB3" stroke-width="1" />
+    <text x="798" y="256" font-size="15.5" font-weight="700" fill="#6ED5FF" text-anchor="middle">{{S3_T}}</text>
+    <rect x="736" y="278" width="124" height="218" rx="10" fill="#FFFFFF" stroke="#65BCEB" stroke-width="1.2" />
+    <image href="{{IMG_3}}" x="740" y="282" width="116" height="210" preserveAspectRatio="xMidYMid meet" />
+    <text x="798" y="518" font-size="12.5" fill="#DCE8F8" text-anchor="middle">{{S3_D}}</text>
+
+    <polygon points="940,378 952,378 952,372 962,385 952,398 952,392 940,392" fill="#65BCEB" />
+
+    <!-- 步骤4 -->
+    <rect x="966" y="232" width="260" height="316" rx="14" fill="#0D2545" fill-opacity="0.9" stroke="#408FB3" stroke-width="1.2" />
+    <rect x="966" y="232" width="260" height="36" rx="10" fill="#174074" stroke="#408FB3" stroke-width="1" />
+    <text x="1096" y="256" font-size="15.5" font-weight="700" fill="#FFC52B" text-anchor="middle">{{S4_T}}</text>
+    <rect x="1034" y="278" width="124" height="218" rx="10" fill="#FFFFFF" stroke="#65BCEB" stroke-width="1.2" />
+    <image href="{{IMG_4}}" x="1038" y="282" width="116" height="210" preserveAspectRatio="xMidYMid meet" />
+    <text x="1096" y="518" font-size="12.5" fill="#DCE8F8" text-anchor="middle">{{S4_D}}</text>
+
+    <!-- 底部衔接底座 -->
+    <polygon points="480,572 800,572 640,552" fill="url(#darkShowcaseConeGrad)" />
+    <rect x="54" y="572" width="1172" height="92" rx="12" fill="#0B2040" fill-opacity="0.94" stroke="#408FB3" stroke-width="1.2" />
+
+    <text x="148" y="608" font-size="15.5" font-weight="700" fill="#FFC52B" text-anchor="middle">{{BRIDGE_TITLE}}</text>
+    <rect x="242" y="582" width="222" height="38" rx="8" fill="#132F50" stroke="#408FB3" stroke-width="1" />
+    <text x="353" y="606" font-size="14" font-weight="700" fill="#F4F7FC" text-anchor="middle">{{B1}}</text>
+    <rect x="480" y="582" width="222" height="38" rx="8" fill="#132F50" stroke="#408FB3" stroke-width="1" />
+    <text x="591" y="606" font-size="14" font-weight="700" fill="#F4F7FC" text-anchor="middle">{{B2}}</text>
+    <rect x="718" y="582" width="222" height="38" rx="8" fill="#132F50" stroke="#408FB3" stroke-width="1" />
+    <text x="829" y="606" font-size="14" font-weight="700" fill="#F4F7FC" text-anchor="middle">{{B3}}</text>
+    <rect x="956" y="582" width="252" height="38" rx="8" fill="#132F50" stroke="#408FB3" stroke-width="1" />
+    <text x="1082" y="606" font-size="14" font-weight="700" fill="#F4F7FC" text-anchor="middle">{{B4}}</text>
+
+    <text x="148" y="648" font-size="14" font-weight="700" fill="#6ED5FF" text-anchor="middle">{{BASE_LABEL}}</text>
+    <rect x="242" y="628" width="460" height="28" rx="6" fill="#174074" stroke="#65BCEB" stroke-width="1" />
+    <text x="472" y="647" font-size="13.5" font-weight="700" fill="#FFC52B" text-anchor="middle">{{BASE_1}}</text>
+    <rect x="718" y="628" width="490" height="28" rx="6" fill="#174074" stroke="#65BCEB" stroke-width="1" />
+    <text x="963" y="647" font-size="13.5" font-weight="700" fill="#FFC52B" text-anchor="middle">{{BASE_2}}</text>
+  </g>
+
+  <g id="content-slide-number-slot" data-pptx-placeholder="slide-number" data-pptx-idx="3" data-pptx-bounds="1208 682 56 32">
+    <text id="content-slide-number-carrier" data-pptx-carrier="true" x="1256" y="704" text-anchor="end" fill="#C7D9EC" font-family="Arial, sans-serif" font-size="15" font-weight="700">{{PAGE_NUM}}</text>
+  </g>
+</svg>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+  lang="zh-CN" width="1280" height="720" viewBox="0 0 1280 720"
+  font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif"
+  data-pptx-master="cmic_3d_summit_master" data-pptx-master-name="CMIC 3D Summit"
+  data-pptx-layout="summit_content" data-pptx-layout-name="Summit Content">
+  <image id="summit-master-bg" x="0" y="0" width="1280" height="720"
+    href="../images/bg_summit_3d.png" preserveAspectRatio="none"
+    data-pptx-layer="master" data-pptx-editable="false"/>
+
+  <g id="summit-banner-slot" data-pptx-placeholder="body" data-pptx-idx="1" data-pptx-bounds="160 12 960 56">
+    <text id="summit-banner-carrier" data-pptx-carrier="true" x="640" y="54" text-anchor="middle" fill="#FFFFFF" font-size="28" font-weight="700">{{BANNER_TOP}}</text>
+  </g>
+  <g id="summit-subbanner-slot" data-pptx-placeholder="body" data-pptx-idx="2" data-pptx-bounds="200 68 880 38">
+    <text id="summit-subbanner-carrier" data-pptx-carrier="true" x="640" y="96" text-anchor="middle" fill="#E6F2FF" font-size="20" font-weight="700">{{BANNER_SUB}}</text>
+  </g>
+  <g id="summit-title-slot" data-pptx-placeholder="title" data-pptx-bounds="80 124 1120 84">
+    <text id="summit-title-carrier" data-pptx-carrier="true" x="640" y="162" text-anchor="middle" fill="#0F2F7F" font-size="25" font-weight="700">{{HEADLINE}}</text>
+  </g>
+
+  <g id="summit-object-slot" data-pptx-placeholder="object" data-pptx-idx="3" data-pptx-binding="proxy" data-pptx-bounds="32 220 1216 476">
+    <!-- 卡1 -->
+    <rect x="34" y="228" width="228" height="392" rx="18" fill="#FFFFFF" fill-opacity="0.90" stroke="#9FD0FF" stroke-width="1.5" />
+    <text x="148" y="266" font-size="18" font-weight="700" fill="#0F2F7F" text-anchor="middle">{{E1_T}}</text>
+    <text x="148" y="296" font-size="15" font-weight="700" fill="#C82018" text-anchor="middle">{{E1_SUB}}</text>
+    <image href="{{ICON_1}}" x="88" y="316" width="120" height="120" preserveAspectRatio="xMidYMid meet" />
+    <text x="50" y="468" font-size="13.5" fill="#1E293B">{{E1_B}}</text>
+
+    <!-- 卡2 -->
+    <rect x="280" y="228" width="228" height="392" rx="18" fill="#FFFFFF" fill-opacity="0.90" stroke="#9FD0FF" stroke-width="1.5" />
+    <text x="394" y="266" font-size="18" font-weight="700" fill="#0F2F7F" text-anchor="middle">{{E2_T}}</text>
+    <text x="394" y="296" font-size="15" font-weight="700" fill="#C82018" text-anchor="middle">{{E2_SUB}}</text>
+    <image href="{{ICON_2}}" x="334" y="316" width="120" height="120" preserveAspectRatio="xMidYMid meet" />
+    <text x="296" y="468" font-size="13.5" fill="#1E293B">{{E2_B}}</text>
+
+    <!-- 卡3 -->
+    <rect x="526" y="228" width="228" height="392" rx="18" fill="#FFFFFF" fill-opacity="0.90" stroke="#9FD0FF" stroke-width="1.5" />
+    <text x="640" y="266" font-size="18" font-weight="700" fill="#0F2F7F" text-anchor="middle">{{E3_T}}</text>
+    <text x="640" y="296" font-size="15" font-weight="700" fill="#C82018" text-anchor="middle">{{E3_SUB}}</text>
+    <image href="{{ICON_3}}" x="580" y="316" width="120" height="120" preserveAspectRatio="xMidYMid meet" />
+    <text x="542" y="468" font-size="13.5" fill="#1E293B">{{E3_B}}</text>
+
+    <!-- 卡4 -->
+    <rect x="772" y="228" width="228" height="392" rx="18" fill="#FFFFFF" fill-opacity="0.90" stroke="#9FD0FF" stroke-width="1.5" />
+    <text x="886" y="266" font-size="18" font-weight="700" fill="#0F2F7F" text-anchor="middle">{{E4_T}}</text>
+    <text x="886" y="296" font-size="15" font-weight="700" fill="#C82018" text-anchor="middle">{{E4_SUB}}</text>
+    <image href="{{ICON_4}}" x="826" y="316" width="120" height="120" preserveAspectRatio="xMidYMid meet" />
+    <text x="788" y="468" font-size="13.5" fill="#1E293B">{{E4_B}}</text>
+
+    <!-- 卡5 -->
+    <rect x="1018" y="228" width="228" height="392" rx="18" fill="#FFFFFF" fill-opacity="0.90" stroke="#9FD0FF" stroke-width="1.5" />
+    <text x="1132" y="266" font-size="18" font-weight="700" fill="#0F2F7F" text-anchor="middle">{{E5_T}}</text>
+    <text x="1132" y="296" font-size="15" font-weight="700" fill="#C82018" text-anchor="middle">{{E5_SUB}}</text>
+    <image href="{{ICON_5}}" x="1072" y="316" width="120" height="120" preserveAspectRatio="xMidYMid meet" />
+    <text x="1034" y="468" font-size="13.5" fill="#1E293B">{{E5_B}}</text>
+
+    <!-- 底部红字定论 -->
+    <text x="640" y="672" font-size="21" font-weight="700" fill="#C82018" text-anchor="middle">{{BOTTOM_NOTE}}</text>
+  </g>
+</svg>

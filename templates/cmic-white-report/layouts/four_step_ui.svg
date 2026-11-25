@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+  lang="zh-CN" width="1280" height="720" viewBox="0 0 1280 720"
+  font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif"
+  data-pptx-master="cmic_content_master" data-pptx-master-name="CMIC Content"
+  data-pptx-layout="content" data-pptx-layout-name="Title and Content">
+  <rect id="content-master-bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" data-pptx-layer="master" data-pptx-editable="false"/>
+  <image id="content-master-logo" x="1126" y="10" width="122" height="58" href="../images/logo_cmic.png" preserveAspectRatio="xMidYMid meet" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="content-master-header-rule" x1="32" y1="70" x2="1248" y2="70" stroke="#0070C0" stroke-width="2" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="content-master-footer-rule" x1="32" y1="684" x2="1248" y2="684" stroke="#E2ECF8" stroke-width="1" data-pptx-layer="master" data-pptx-editable="false"/>
+
+  <g id="content-title-slot" data-pptx-placeholder="title" data-pptx-bounds="32 16 1080 48">
+    <text id="content-title-carrier" data-pptx-carrier="true" x="32" y="51" fill="#0070C0" font-size="28" font-weight="700">{{TITLE}}</text>
+  </g>
+  <g id="content-takeaway-slot" data-pptx-placeholder="body" data-pptx-idx="1" data-pptx-bounds="40 78 1200 66">
+    <text id="content-takeaway-carrier" data-pptx-carrier="true" x="640" y="114" text-anchor="middle" fill="#0070C0" font-size="19.5" font-weight="700">{{TAKEAWAY}}</text>
+  </g>
+  <g id="content-object-slot" data-pptx-placeholder="object" data-pptx-idx="2" data-pptx-binding="proxy" data-pptx-bounds="32 156 1216 516">
+    <!-- 4 步截图流 -->
+    <circle cx="96" cy="176" r="15" fill="#0070C0" /><text x="96" y="182" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="120" y="183" font-size="19" font-weight="700" fill="#102C55">{{S1_T}}</text>
+    <rect x="92" y="200" width="168" height="292" rx="12" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2" />
+    <image href="{{IMG_1}}" x="98" y="206" width="156" height="280" preserveAspectRatio="xMidYMid meet" />
+    <text x="176" y="514" font-size="13.5" fill="#283954" text-anchor="middle">{{S1_D}}</text>
+
+    <circle cx="404" cy="176" r="15" fill="#0070C0" /><text x="404" y="182" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="428" y="183" font-size="19" font-weight="700" fill="#102C55">{{S2_T}}</text>
+    <rect x="400" y="200" width="168" height="292" rx="12" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2" />
+    <image href="{{IMG_2}}" x="406" y="206" width="156" height="280" preserveAspectRatio="xMidYMid meet" />
+    <text x="484" y="514" font-size="13.5" fill="#283954" text-anchor="middle">{{S2_D}}</text>
+
+    <circle cx="712" cy="176" r="15" fill="#0070C0" /><text x="712" y="182" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="736" y="183" font-size="19" font-weight="700" fill="#102C55">{{S3_T}}</text>
+    <rect x="708" y="200" width="168" height="292" rx="12" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2" />
+    <image href="{{IMG_3}}" x="714" y="206" width="156" height="280" preserveAspectRatio="xMidYMid meet" />
+    <text x="792" y="514" font-size="13.5" fill="#283954" text-anchor="middle">{{S3_D}}</text>
+
+    <circle cx="1020" cy="176" r="15" fill="#0070C0" /><text x="1020" y="182" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+    <text x="1044" y="183" font-size="19" font-weight="700" fill="#102C55">{{S4_T}}</text>
+    <rect x="1016" y="200" width="168" height="292" rx="12" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2" />
+    <image href="{{IMG_4}}" x="1022" y="206" width="156" height="280" preserveAspectRatio="xMidYMid meet" />
+    <text x="1100" y="514" font-size="13.5" fill="#283954" text-anchor="middle">{{S4_D}}</text>
+
+    <!-- 底部衔接条 -->
+    <text x="36" y="568" font-size="17" font-weight="700" fill="#0070C0">{{BRIDGE_TITLE}}</text>
+    <rect x="32" y="576" width="1216" height="44" rx="8" fill="#4472C4" />
+    <text x="184" y="604" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{B1}}</text>
+    <line x1="336" y1="586" x2="336" y2="610" stroke="#93B4E8" stroke-width="1.5" />
+    <text x="488" y="604" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{B2}}</text>
+    <line x1="640" y1="586" x2="640" y2="610" stroke="#93B4E8" stroke-width="1.5" />
+    <text x="792" y="604" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{B3}}</text>
+    <line x1="944" y1="586" x2="944" y2="610" stroke="#93B4E8" stroke-width="1.5" />
+    <text x="1096" y="604" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{B4}}</text>
+
+    <!-- 双底座 -->
+    <text x="36" y="656" font-size="17" font-weight="700" fill="#0070C0">{{BASE_LABEL}}</text>
+    <rect x="260" y="630" width="320" height="38" rx="8" fill="#FFF5F5" stroke="#F5C2C7" stroke-width="1" />
+    <text x="420" y="655" font-size="17" font-weight="700" fill="#C00000" text-anchor="middle">{{BASE_1}}</text>
+    <rect x="740" y="630" width="320" height="38" rx="8" fill="#FFF5F5" stroke="#F5C2C7" stroke-width="1" />
+    <text x="900" y="655" font-size="17" font-weight="700" fill="#C00000" text-anchor="middle">{{BASE_2}}</text>
+  </g>
+  <g id="content-source-slot" data-pptx-placeholder="footer" data-pptx-idx="3" data-pptx-bounds="32 688 900 28">
+    <text id="content-source-carrier" data-pptx-carrier="true" x="32" y="707" fill="#64748B" font-family="Arial, Microsoft YaHei, sans-serif" font-size="12">{{SOURCE}}</text>
+  </g>
+  <g id="content-slide-number-slot" data-pptx-placeholder="slide-number" data-pptx-idx="4" data-pptx-bounds="1188 688 60 28">
+    <text id="content-slide-number-carrier" data-pptx-carrier="true" x="1248" y="707" text-anchor="end" fill="#64748B" font-family="Arial, sans-serif" font-size="13" font-weight="700">{{PAGE_NUM}}</text>
+  </g>
+</svg>

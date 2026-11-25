@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+  lang="zh-CN" width="1280" height="720" viewBox="0 0 1280 720"
+  font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif"
+  data-pptx-master="cmic_content_master" data-pptx-master-name="CMIC Content"
+  data-pptx-layout="content" data-pptx-layout-name="Title and Content">
+  <rect id="content-master-bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" data-pptx-layer="master" data-pptx-editable="false"/>
+  <image id="content-master-logo" x="1126" y="10" width="122" height="58" href="../images/logo_cmic.png" preserveAspectRatio="xMidYMid meet" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="content-master-header-rule" x1="32" y1="70" x2="1248" y2="70" stroke="#0070C0" stroke-width="2" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="content-master-footer-rule" x1="32" y1="684" x2="1248" y2="684" stroke="#E2ECF8" stroke-width="1" data-pptx-layer="master" data-pptx-editable="false"/>
+
+  <g id="content-title-slot" data-pptx-placeholder="title" data-pptx-bounds="32 16 1080 48">
+    <text id="content-title-carrier" data-pptx-carrier="true" x="32" y="51" fill="#0070C0" font-size="28" font-weight="700">{{TITLE}}</text>
+  </g>
+  <g id="content-takeaway-slot" data-pptx-placeholder="body" data-pptx-idx="1" data-pptx-bounds="40 78 1200 66">
+    <text id="content-takeaway-carrier" data-pptx-carrier="true" x="640" y="104" text-anchor="middle" fill="#0070C0" font-size="19" font-weight="700">{{TAKEAWAY}}</text>
+  </g>
+  <g id="content-object-slot" data-pptx-placeholder="object" data-pptx-idx="2" data-pptx-binding="proxy" data-pptx-bounds="32 156 1216 516">
+    <!-- 左栏 -->
+    <rect x="32" y="160" width="594" height="398" rx="10" fill="#FFFFFF" stroke="#BDD7EE" stroke-width="1.4" />
+    <rect x="32" y="160" width="594" height="44" rx="8" fill="#0070C0" />
+    <text x="329" y="189" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{LEFT_HEADER}}</text>
+
+    <rect x="52" y="222" width="554" height="100" rx="8" fill="#F5F9FF" stroke="#DCE8F8" stroke-width="1" />
+    <circle cx="78" cy="248" r="14" fill="#0070C0" /><text x="78" y="253" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="102" y="254" font-size="17" font-weight="700" fill="#0070C0">{{L1_T}}</text>
+    <text x="68" y="284" font-size="13.5" fill="#475569">{{L1_B}}</text>
+
+    <rect x="52" y="336" width="554" height="100" rx="8" fill="#F5F9FF" stroke="#DCE8F8" stroke-width="1" />
+    <circle cx="78" cy="362" r="14" fill="#0070C0" /><text x="78" y="367" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="102" y="368" font-size="17" font-weight="700" fill="#0070C0">{{L2_T}}</text>
+    <text x="68" y="398" font-size="13.5" fill="#475569">{{L2_B}}</text>
+
+    <rect x="52" y="450" width="554" height="96" rx="8" fill="#F5F9FF" stroke="#DCE8F8" stroke-width="1" />
+    <circle cx="78" cy="476" r="14" fill="#0070C0" /><text x="78" y="481" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="102" y="482" font-size="17" font-weight="700" fill="#0070C0">{{L3_T}}</text>
+    <text x="68" y="512" font-size="13.5" fill="#475569">{{L3_B}}</text>
+
+    <!-- 箭头 -->
+    <polygon points="634,332 666,332 666,316 694,358 666,400 666,384 634,384" fill="#F08200" />
+    <text x="660" y="364" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{ARROW_LABEL}}</text>
+
+    <!-- 右栏 -->
+    <rect x="702" y="160" width="546" height="398" rx="10" fill="#FFFFFF" stroke="#F7CBA0" stroke-width="1.4" />
+    <rect x="702" y="160" width="546" height="44" rx="8" fill="#F08200" />
+    <text x="975" y="189" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{RIGHT_HEADER}}</text>
+
+    <rect x="722" y="222" width="506" height="98" rx="8" fill="#FFF9F2" stroke="#FCE2C4" stroke-width="1.2" />
+    <rect x="738" y="245" width="114" height="52" rx="8" fill="#0070C0" />
+    <text x="795" y="277" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{R1_TAG}}</text>
+    <text x="874" y="264" font-size="17" font-weight="700" fill="#102C55">{{R1_T}}</text>
+    <text x="874" y="294" font-size="14" fill="#475569">{{R1_B}}</text>
+
+    <rect x="722" y="336" width="506" height="98" rx="8" fill="#FFF9F2" stroke="#FCE2C4" stroke-width="1.2" />
+    <rect x="738" y="359" width="114" height="52" rx="8" fill="#F08200" />
+    <text x="795" y="391" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{R2_TAG}}</text>
+    <text x="874" y="378" font-size="17" font-weight="700" fill="#102C55">{{R2_T}}</text>
+    <text x="874" y="408" font-size="14" fill="#475569">{{R2_B}}</text>
+
+    <rect x="722" y="450" width="506" height="96" rx="8" fill="#FFF5F5" stroke="#F5C2C7" stroke-width="1.2" />
+    <rect x="738" y="471" width="114" height="52" rx="8" fill="#C00000" />
+    <text x="795" y="503" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{R3_TAG}}</text>
+    <text x="874" y="490" font-size="17" font-weight="700" fill="#C00000">{{R3_T}}</text>
+    <text x="874" y="520" font-size="14" fill="#475569">{{R3_B}}</text>
+
+    <!-- 底部收束条 -->
+    <rect x="32" y="580" width="1216" height="86" rx="10" fill="#F5F9FF" stroke="#0070C0" stroke-width="1.4" />
+    <rect x="46" y="594" width="144" height="58" rx="8" fill="#C00000" />
+    <text x="118" y="619" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{BOTTOM_TAG}}</text>
+    <text x="218" y="617" font-size="17" font-weight="700" fill="#102C55">{{BOTTOM_L1}}</text>
+    <text x="218" y="647" font-size="17" font-weight="700" fill="#0070C0">{{BOTTOM_L2}}</text>
+  </g>
+  <g id="content-source-slot" data-pptx-placeholder="footer" data-pptx-idx="3" data-pptx-bounds="32 688 900 28">
+    <text id="content-source-carrier" data-pptx-carrier="true" x="32" y="707" fill="#64748B" font-family="Arial, Microsoft YaHei, sans-serif" font-size="12">{{SOURCE}}</text>
+  </g>
+  <g id="content-slide-number-slot" data-pptx-placeholder="slide-number" data-pptx-idx="4" data-pptx-bounds="1188 688 60 28">
+    <text id="content-slide-number-carrier" data-pptx-carrier="true" x="1248" y="707" text-anchor="end" fill="#64748B" font-family="Arial, sans-serif" font-size="13" font-weight="700">{{PAGE_NUM}}</text>
+  </g>
+</svg>

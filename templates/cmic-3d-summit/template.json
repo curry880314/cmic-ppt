@@ -1,0 +1,99 @@
+{
+  "id": "cmic-3d-summit",
+  "name": "3D 蓝玻大会视觉风",
+  "canvas": "1280x720",
+  "accent_color": "#C82018",
+  "secondary_accent": "#0E56C9",
+  "icons": {
+    "id_card": "icon_01.png",
+    "phone_face": "icon_02.png",
+    "doc_check": "icon_03.png",
+    "audit_chain": "icon_04.png",
+    "alarm": "icon_05.png",
+    "shield": "icon_06.png",
+    "sim_6g": "icon_07.png",
+    "ai_cloud": "icon_08.png"
+  },
+  "layouts": {
+    "four_step_pillars": {
+      "file": "four_step_pillars.svg",
+      "description": "大会总览页：顶部四步 3D 玻璃能力卡 + 三大蓝玻底座支柱 + 底部收束说明",
+      "slots": {
+        "BANNER_TOP": {"type": "text", "max_chars": 24, "default": "看不见的 **防线**   看得见的 **安全守护**", "accent_color": "#00F0FF", "hint": "大会顶栏标语（可留默认）"},
+        "BANNER_SUB": {"type": "text", "max_chars": 30, "default": "可信数据空间与AI智能体数字身份技术交流会", "hint": "大会名称副标（可留默认）"},
+        "HEADLINE": {"type": "multiline", "max_chars": 48, "chars_per_line": 28, "max_lines": 2, "dy": 36, "hint": "核心主张标题（支持 **套红**）"},
+        "ICON_1": {"type": "icon", "default": "id_card"}, "S1_T": {"type": "multiline", "max_chars": 16, "chars_per_line": 9, "max_lines": 2, "dy": 26},
+        "ICON_2": {"type": "icon", "default": "phone_face"}, "S2_T": {"type": "multiline", "max_chars": 16, "chars_per_line": 9, "max_lines": 2, "dy": 26},
+        "ICON_3": {"type": "icon", "default": "shield"}, "S3_T": {"type": "multiline", "max_chars": 16, "chars_per_line": 9, "max_lines": 2, "dy": 26},
+        "ICON_4": {"type": "icon", "default": "audit_chain"}, "S4_T": {"type": "multiline", "max_chars": 16, "chars_per_line": 9, "max_lines": 2, "dy": 26},
+        "PILLAR_ICON_1": {"type": "icon", "default": "id_card"}, "P1_T": {"type": "text", "max_chars": 8},
+        "PILLAR_ICON_2": {"type": "icon", "default": "shield"}, "P2_T": {"type": "text", "max_chars": 8},
+        "PILLAR_ICON_3": {"type": "icon", "default": "audit_chain"}, "P3_T": {"type": "text", "max_chars": 8},
+        "BOTTOM_NOTE": {"type": "multiline", "max_chars": 68, "chars_per_line": 36, "max_lines": 2, "dy": 30}
+      }
+    },
+    "five_elements": {
+      "file": "five_elements.svg",
+      "description": "五要素玻璃卡片横排页（图标 + 红字问题句 + 正文说明）+ 底部红字定论",
+      "slots": {
+        "BANNER_TOP": {"type": "text", "max_chars": 24, "default": "看不见的 **防线**   看得见的 **安全守护**", "accent_color": "#00F0FF"},
+        "BANNER_SUB": {"type": "text", "max_chars": 30, "default": "可信数据空间与AI智能体数字身份技术交流会"},
+        "HEADLINE": {"type": "multiline", "max_chars": 48, "chars_per_line": 28, "max_lines": 2, "dy": 36, "hint": "核心主张（可用 \\n 换行，支持 **套红**）"},
+        "E1_T": {"type": "text", "max_chars": 10}, "E1_SUB": {"type": "text", "max_chars": 11}, "ICON_1": {"type": "icon", "default": "id_card"}, "E1_B": {"type": "multiline", "max_chars": 48, "chars_per_line": 13, "max_lines": 4, "dy": 23},
+        "E2_T": {"type": "text", "max_chars": 10}, "E2_SUB": {"type": "text", "max_chars": 11}, "ICON_2": {"type": "icon", "default": "phone_face"}, "E2_B": {"type": "multiline", "max_chars": 48, "chars_per_line": 13, "max_lines": 4, "dy": 23},
+        "E3_T": {"type": "text", "max_chars": 10}, "E3_SUB": {"type": "text", "max_chars": 11}, "ICON_3": {"type": "icon", "default": "doc_check"}, "E3_B": {"type": "multiline", "max_chars": 48, "chars_per_line": 13, "max_lines": 4, "dy": 23},
+        "E4_T": {"type": "text", "max_chars": 10}, "E4_SUB": {"type": "text", "max_chars": 11}, "ICON_4": {"type": "icon", "default": "audit_chain"}, "E4_B": {"type": "multiline", "max_chars": 48, "chars_per_line": 13, "max_lines": 4, "dy": 23},
+        "E5_T": {"type": "text", "max_chars": 10}, "E5_SUB": {"type": "text", "max_chars": 11}, "ICON_5": {"type": "icon", "default": "alarm"}, "E5_B": {"type": "multiline", "max_chars": 48, "chars_per_line": 13, "max_lines": 4, "dy": 23},
+        "BOTTOM_NOTE": {"type": "text", "max_chars": 42}
+      }
+    },
+    "three_proof_cards": {
+      "file": "three_proof_cards.svg",
+      "description": "顶部三节点 3D 演进图 + 下方蓝/青/紫渐变顶条三栏成果背书卡（每栏3条要点）",
+      "slots": {
+        "BANNER_TOP": {"type": "text", "max_chars": 24, "default": "看不见的 **防线**   看得见的 **安全守护**", "accent_color": "#00F0FF"},
+        "BANNER_SUB": {"type": "text", "max_chars": 30, "default": "可信数据空间与AI智能体数字身份技术交流会"},
+        "HEADLINE": {"type": "multiline", "max_chars": 48, "chars_per_line": 28, "max_lines": 2, "dy": 36},
+        "TOP_ICON_1": {"type": "icon", "default": "phone_face"},
+        "TOP_ICON_2": {"type": "icon", "default": "shield"},
+        "TOP_ICON_3": {"type": "icon", "default": "ai_cloud"},
+        "CARD_ICON_1": {"type": "icon", "default": "doc_check"}, "C1_H": {"type": "multiline", "max_chars": 20, "chars_per_line": 11, "max_lines": 2, "dy": 26},
+        "C1_B1": {"type": "multiline", "max_chars": 36, "chars_per_line": 20, "max_lines": 2, "dy": 23, "accent_color": "#0E56C9"},
+        "C1_B2": {"type": "multiline", "max_chars": 36, "chars_per_line": 20, "max_lines": 2, "dy": 23, "accent_color": "#0E56C9"},
+        "C1_B3": {"type": "multiline", "max_chars": 36, "chars_per_line": 20, "max_lines": 2, "dy": 23, "accent_color": "#0E56C9"},
+        "CARD_ICON_2": {"type": "icon", "default": "id_card"}, "C2_H": {"type": "multiline", "max_chars": 20, "chars_per_line": 11, "max_lines": 2, "dy": 26},
+        "C2_B1": {"type": "multiline", "max_chars": 36, "chars_per_line": 20, "max_lines": 2, "dy": 23, "accent_color": "#0E56C9"},
+        "C2_B2": {"type": "multiline", "max_chars": 36, "chars_per_line": 20, "max_lines": 2, "dy": 23, "accent_color": "#0E56C9"},
+        "C2_B3": {"type": "multiline", "max_chars": 36, "chars_per_line": 20, "max_lines": 2, "dy": 23, "accent_color": "#0E56C9"},
+        "CARD_ICON_3": {"type": "icon", "default": "audit_chain"}, "C3_H": {"type": "multiline", "max_chars": 20, "chars_per_line": 11, "max_lines": 2, "dy": 26},
+        "C3_B1": {"type": "multiline", "max_chars": 36, "chars_per_line": 20, "max_lines": 2, "dy": 23, "accent_color": "#0E56C9"},
+        "C3_B2": {"type": "multiline", "max_chars": 36, "chars_per_line": 20, "max_lines": 2, "dy": 23, "accent_color": "#0E56C9"},
+        "C3_B3": {"type": "multiline", "max_chars": 36, "chars_per_line": 20, "max_lines": 2, "dy": 23, "accent_color": "#0E56C9"}
+      }
+    },
+    "three_vision_cards": {
+      "file": "three_vision_cards.svg",
+      "description": "三阶段演进/愿景 3D 玻璃大卡（胶囊顶标 + 3D 主视觉图标 + 3条要点 + 底部红字收束胶囊）",
+      "slots": {
+        "BANNER_TOP": {"type": "text", "max_chars": 24, "default": "看不见的 **防线**   看得见的 **安全守护**", "accent_color": "#00F0FF"},
+        "BANNER_SUB": {"type": "text", "max_chars": 30, "default": "可信数据空间与AI智能体数字身份技术交流会"},
+        "HEADLINE": {"type": "multiline", "max_chars": 58, "chars_per_line": 32, "max_lines": 2, "dy": 36},
+        "V1_H": {"type": "text", "max_chars": 15}, "ICON_1": {"type": "icon", "default": "ai_cloud"},
+        "V1_T1": {"type": "text", "max_chars": 14}, "V1_D1": {"type": "text", "max_chars": 22},
+        "V1_T2": {"type": "text", "max_chars": 14}, "V1_D2": {"type": "text", "max_chars": 22},
+        "V1_T3": {"type": "text", "max_chars": 14}, "V1_D3": {"type": "text", "max_chars": 22},
+        "V1_TAG": {"type": "text", "max_chars": 16},
+        "V2_H": {"type": "text", "max_chars": 15}, "ICON_2": {"type": "icon", "default": "shield"},
+        "V2_T1": {"type": "text", "max_chars": 14}, "V2_D1": {"type": "text", "max_chars": 22},
+        "V2_T2": {"type": "text", "max_chars": 14}, "V2_D2": {"type": "text", "max_chars": 22},
+        "V2_T3": {"type": "text", "max_chars": 14}, "V2_D3": {"type": "text", "max_chars": 22},
+        "V2_TAG": {"type": "text", "max_chars": 16},
+        "V3_H": {"type": "text", "max_chars": 15}, "ICON_3": {"type": "icon", "default": "sim_6g"},
+        "V3_T1": {"type": "text", "max_chars": 14}, "V3_D1": {"type": "text", "max_chars": 22},
+        "V3_T2": {"type": "text", "max_chars": 14}, "V3_D2": {"type": "text", "max_chars": 22},
+        "V3_T3": {"type": "text", "max_chars": 14}, "V3_D3": {"type": "text", "max_chars": 22},
+        "V3_TAG": {"type": "text", "max_chars": 16}
+      }
+    }
+  }
+}

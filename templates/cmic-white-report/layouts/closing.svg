@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+  lang="zh-CN" width="1280" height="720" viewBox="0 0 1280 720"
+  font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif"
+  data-pptx-master="cmic_brand_master" data-pptx-master-name="CMIC Brand"
+  data-pptx-layout="closing" data-pptx-layout-name="Closing">
+  <image id="brand-master-bg" x="0" y="0" width="1280" height="720"
+    href="../images/bg_cover_cmic.png" preserveAspectRatio="none"
+    data-pptx-layer="master" data-pptx-editable="false"/>
+  <image id="brand-master-logo" x="1096" y="24" width="144" height="68"
+    href="../images/logo_cmic.png" preserveAspectRatio="xMidYMid meet"
+    data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="closing-rule" x="560" y="392" width="160" height="3" rx="1.5" fill="#0070C0"
+    data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="closing-title-slot" data-pptx-placeholder="title" data-pptx-bounds="140 264 1000 84">
+    <text id="closing-title-carrier" data-pptx-carrier="true" x="640" y="324" text-anchor="middle" fill="#0070C0" font-size="48" font-weight="700">{{TITLE}}</text>
+  </g>
+  <g id="closing-subtitle-slot" data-pptx-placeholder="subtitle" data-pptx-idx="1" data-pptx-bounds="240 416 800 44">
+    <text id="closing-subtitle-carrier" data-pptx-carrier="true" x="640" y="446" text-anchor="middle" fill="#4A607A" font-size="20">{{SUBTITLE}}</text>
+  </g>
+  <g id="closing-meta-slot" data-pptx-placeholder="body" data-pptx-idx="2" data-pptx-bounds="390 472 500 38">
+    <text id="closing-meta-carrier" data-pptx-carrier="true" x="640" y="498" text-anchor="middle" fill="#102C55" font-size="18" font-weight="700">{{AUTHOR}}</text>
+  </g>
+</svg>

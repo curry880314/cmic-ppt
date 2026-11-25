@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+  lang="zh-CN" width="1280" height="720" viewBox="0 0 1280 720"
+  font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif"
+  data-pptx-master="cmic_content_master" data-pptx-master-name="CMIC Content"
+  data-pptx-layout="content" data-pptx-layout-name="Title and Content">
+  <rect id="content-master-bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" data-pptx-layer="master" data-pptx-editable="false"/>
+  <image id="content-master-logo" x="1126" y="10" width="122" height="58" href="../images/logo_cmic.png" preserveAspectRatio="xMidYMid meet" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="content-master-header-rule" x1="32" y1="70" x2="1248" y2="70" stroke="#0070C0" stroke-width="2" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="content-master-footer-rule" x1="32" y1="684" x2="1248" y2="684" stroke="#E2ECF8" stroke-width="1" data-pptx-layer="master" data-pptx-editable="false"/>
+
+  <g id="content-title-slot" data-pptx-placeholder="title" data-pptx-bounds="32 16 1080 48">
+    <text id="content-title-carrier" data-pptx-carrier="true" x="32" y="51" fill="#0070C0" font-size="28" font-weight="700">{{TITLE}}</text>
+  </g>
+  <g id="content-takeaway-slot" data-pptx-placeholder="body" data-pptx-idx="1" data-pptx-bounds="40 78 1200 66">
+    <text id="content-takeaway-carrier" data-pptx-carrier="true" x="640" y="104" text-anchor="middle" fill="#0070C0" font-size="19" font-weight="700">{{TAKEAWAY}}</text>
+  </g>
+  <g id="content-object-slot" data-pptx-placeholder="object" data-pptx-idx="2" data-pptx-binding="proxy" data-pptx-bounds="32 156 1216 516">
+    <!-- 列1 蓝 -->
+    <rect x="32" y="158" width="392" height="414" rx="10" fill="#FFFFFF" stroke="#BDD7EE" stroke-width="1.2" />
+    <rect x="32" y="158" width="392" height="40" rx="8" fill="#0F70D7" />
+    <text x="228" y="185" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{COL1_HEADER}}</text>
+    <rect x="46" y="210" width="364" height="110" rx="8" fill="#F6FAFF" stroke="#DCE8F8" stroke-width="1" />
+    <circle cx="70" cy="236" r="14" fill="#0F70D7" /><text x="70" y="241" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="94" y="242" font-size="17" font-weight="700" fill="#0F70D7">{{COL1_T1}}</text>
+    <text x="58" y="274" font-size="14" fill="#283954">{{COL1_B1}}</text>
+    <rect x="46" y="330" width="364" height="110" rx="8" fill="#F6FAFF" stroke="#DCE8F8" stroke-width="1" />
+    <circle cx="70" cy="356" r="14" fill="#0F70D7" /><text x="70" y="361" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="94" y="362" font-size="17" font-weight="700" fill="#0F70D7">{{COL1_T2}}</text>
+    <text x="58" y="394" font-size="14" fill="#283954">{{COL1_B2}}</text>
+    <rect x="46" y="450" width="364" height="110" rx="8" fill="#F6FAFF" stroke="#DCE8F8" stroke-width="1" />
+    <circle cx="70" cy="476" r="14" fill="#0F70D7" /><text x="70" y="481" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="94" y="482" font-size="17" font-weight="700" fill="#0F70D7">{{COL1_T3}}</text>
+    <text x="58" y="514" font-size="14" fill="#283954">{{COL1_B3}}</text>
+
+    <!-- 列2 绿 -->
+    <rect x="444" y="158" width="392" height="414" rx="10" fill="#FFFFFF" stroke="#B7DEC9" stroke-width="1.2" />
+    <rect x="444" y="158" width="392" height="40" rx="8" fill="#108A54" />
+    <text x="640" y="185" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{COL2_HEADER}}</text>
+    <rect x="458" y="210" width="364" height="110" rx="8" fill="#F4FBF7" stroke="#D1EEDF" stroke-width="1" />
+    <circle cx="482" cy="236" r="14" fill="#108A54" /><text x="482" y="241" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="506" y="242" font-size="17" font-weight="700" fill="#108A54">{{COL2_T1}}</text>
+    <text x="470" y="274" font-size="14" fill="#283954">{{COL2_B1}}</text>
+    <rect x="458" y="330" width="364" height="110" rx="8" fill="#F4FBF7" stroke="#D1EEDF" stroke-width="1" />
+    <circle cx="482" cy="356" r="14" fill="#108A54" /><text x="482" y="361" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="506" y="362" font-size="17" font-weight="700" fill="#108A54">{{COL2_T2}}</text>
+    <text x="470" y="394" font-size="14" fill="#283954">{{COL2_B2}}</text>
+    <rect x="458" y="450" width="364" height="110" rx="8" fill="#F4FBF7" stroke="#D1EEDF" stroke-width="1" />
+    <circle cx="482" cy="476" r="14" fill="#108A54" /><text x="482" y="481" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="506" y="482" font-size="17" font-weight="700" fill="#108A54">{{COL2_T3}}</text>
+    <text x="470" y="514" font-size="14" fill="#283954">{{COL2_B3}}</text>
+
+    <!-- 列3 橙 -->
+    <rect x="856" y="158" width="392" height="414" rx="10" fill="#FFFFFF" stroke="#F7CBA0" stroke-width="1.2" />
+    <rect x="856" y="158" width="392" height="40" rx="8" fill="#F08200" />
+    <text x="1052" y="185" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{COL3_HEADER}}</text>
+    <rect x="870" y="210" width="364" height="110" rx="8" fill="#FFF9F2" stroke="#FCE2C4" stroke-width="1" />
+    <circle cx="894" cy="236" r="14" fill="#F08200" /><text x="894" y="241" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="918" y="242" font-size="17" font-weight="700" fill="#D96B00">{{COL3_T1}}</text>
+    <text x="882" y="274" font-size="14" fill="#283954">{{COL3_B1}}</text>
+    <rect x="870" y="330" width="364" height="110" rx="8" fill="#FFF9F2" stroke="#FCE2C4" stroke-width="1" />
+    <circle cx="894" cy="356" r="14" fill="#F08200" /><text x="894" y="361" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="918" y="362" font-size="17" font-weight="700" fill="#D96B00">{{COL3_T2}}</text>
+    <text x="882" y="394" font-size="14" fill="#283954">{{COL3_B2}}</text>
+    <rect x="870" y="450" width="364" height="110" rx="8" fill="#FFF9F2" stroke="#FCE2C4" stroke-width="1" />
+    <circle cx="894" cy="476" r="14" fill="#F08200" /><text x="894" y="481" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="918" y="482" font-size="17" font-weight="700" fill="#D96B00">{{COL3_T3}}</text>
+    <text x="882" y="514" font-size="14" fill="#283954">{{COL3_B3}}</text>
+
+    <!-- 底部公式总结条 -->
+    <rect x="32" y="586" width="1216" height="82" rx="12" fill="#F5F9FF" stroke="#85B8EC" stroke-width="1.4" />
+    <rect x="46" y="598" width="132" height="58" rx="8" fill="#0F70D7" />
+    <text x="112" y="623" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{FORMULA_TAG}}</text>
+
+    <circle cx="220" cy="627" r="22" fill="#FFFFFF" stroke="#0F70D7" stroke-width="1.5" />
+    <text x="220" y="633" font-size="16" font-weight="700" fill="#0F70D7" text-anchor="middle">1</text>
+    <text x="252" y="622" font-size="17" font-weight="700" fill="#0F70D7">{{STEP1_T}}</text>
+    <text x="252" y="646" font-size="13" fill="#475569">{{STEP1_D}}</text>
+
+    <text x="382" y="634" font-size="24" font-weight="700" fill="#0F70D7" text-anchor="middle">+</text>
+
+    <circle cx="426" cy="627" r="22" fill="#FFFFFF" stroke="#0F70D7" stroke-width="1.5" />
+    <text x="426" y="633" font-size="16" font-weight="700" fill="#0F70D7" text-anchor="middle">2</text>
+    <text x="458" y="622" font-size="17" font-weight="700" fill="#0F70D7">{{STEP2_T}}</text>
+    <text x="458" y="646" font-size="13" fill="#475569">{{STEP2_D}}</text>
+
+    <text x="588" y="634" font-size="24" font-weight="700" fill="#0F70D7" text-anchor="middle">+</text>
+
+    <circle cx="632" cy="627" r="22" fill="#FFFFFF" stroke="#0F70D7" stroke-width="1.5" />
+    <text x="632" y="633" font-size="16" font-weight="700" fill="#0F70D7" text-anchor="middle">3</text>
+    <text x="664" y="622" font-size="17" font-weight="700" fill="#0F70D7">{{STEP3_T}}</text>
+    <text x="664" y="646" font-size="13" fill="#475569">{{STEP3_D}}</text>
+
+    <text x="804" y="634" font-size="24" font-weight="700" fill="#0F70D7" text-anchor="middle">=</text>
+
+    <circle cx="854" cy="627" r="22" fill="#FFF7ED" stroke="#F08200" stroke-width="1.8" />
+    <polygon points="854,615 858,623 866,624 860,630 862,638 854,634 846,638 848,630 842,624 850,623" fill="#F08200" />
+    <text x="888" y="622" font-size="17" font-weight="700" fill="#D96B00">{{RESULT_T}}</text>
+    <text x="888" y="646" font-size="15" font-weight="700" fill="#C00000">{{RESULT_D}}</text>
+  </g>
+  <g id="content-source-slot" data-pptx-placeholder="footer" data-pptx-idx="3" data-pptx-bounds="32 688 900 28">
+    <text id="content-source-carrier" data-pptx-carrier="true" x="32" y="707" fill="#64748B" font-family="Arial, Microsoft YaHei, sans-serif" font-size="12">{{SOURCE}}</text>
+  </g>
+  <g id="content-slide-number-slot" data-pptx-placeholder="slide-number" data-pptx-idx="4" data-pptx-bounds="1188 688 60 28">
+    <text id="content-slide-number-carrier" data-pptx-carrier="true" x="1248" y="707" text-anchor="end" fill="#64748B" font-family="Arial, sans-serif" font-size="13" font-weight="700">{{PAGE_NUM}}</text>
+  </g>
+</svg>

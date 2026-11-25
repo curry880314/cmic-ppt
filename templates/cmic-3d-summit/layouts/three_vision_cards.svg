@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+  lang="zh-CN" width="1280" height="720" viewBox="0 0 1280 720"
+  font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif"
+  data-pptx-master="cmic_3d_summit_master" data-pptx-master-name="CMIC 3D Summit"
+  data-pptx-layout="summit_content" data-pptx-layout-name="Summit Content">
+  <defs>
+    <linearGradient id="summitVisionArrow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="summitPillBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#DBEAFE" />
+      <stop offset="50%" stop-color="#EFF6FF" />
+      <stop offset="100%" stop-color="#DBEAFE" />
+    </linearGradient>
+  </defs>
+
+  <image id="summit-master-bg" x="0" y="0" width="1280" height="720"
+    href="../images/bg_summit_3d.png" preserveAspectRatio="none"
+    data-pptx-layer="master" data-pptx-editable="false"/>
+
+  <g id="summit-banner-slot" data-pptx-placeholder="body" data-pptx-idx="1" data-pptx-bounds="160 12 960 56">
+    <text id="summit-banner-carrier" data-pptx-carrier="true" x="640" y="54" text-anchor="middle" fill="#FFFFFF" font-size="28" font-weight="700">{{BANNER_TOP}}</text>
+  </g>
+  <g id="summit-subbanner-slot" data-pptx-placeholder="body" data-pptx-idx="2" data-pptx-bounds="200 68 880 38">
+    <text id="summit-subbanner-carrier" data-pptx-carrier="true" x="640" y="96" text-anchor="middle" fill="#E6F2FF" font-size="20" font-weight="700">{{BANNER_SUB}}</text>
+  </g>
+  <g id="summit-title-slot" data-pptx-placeholder="title" data-pptx-bounds="80 124 1120 84">
+    <text id="summit-title-carrier" data-pptx-carrier="true" x="640" y="162" text-anchor="middle" fill="#0F2F7F" font-size="24" font-weight="700">{{HEADLINE}}</text>
+  </g>
+
+  <g id="summit-object-slot" data-pptx-placeholder="object" data-pptx-idx="3" data-pptx-binding="proxy" data-pptx-bounds="32 220 1216 476">
+    <!-- 卡1 -->
+    <rect x="32" y="232" width="376" height="442" rx="20" fill="#FFFFFF" fill-opacity="0.90" stroke="#9FD0FF" stroke-width="1.5" />
+    <rect x="64" y="248" width="312" height="40" rx="20" fill="url(#summitPillBlue)" stroke="#BFDBFE" stroke-width="1" />
+    <text x="220" y="274" font-size="18" font-weight="700" fill="#0F2F7F" text-anchor="middle">{{V1_H}}</text>
+    <image href="{{ICON_1}}" x="160" y="302" width="120" height="120" preserveAspectRatio="xMidYMid meet" />
+
+    <text x="64" y="452" font-size="15" font-weight="700" fill="#0E56C9">▪  {{V1_T1}}</text>
+    <text x="78" y="474" font-size="13.5" fill="#334155">{{V1_D1}}</text>
+    <text x="64" y="508" font-size="15" font-weight="700" fill="#0E56C9">▪  {{V1_T2}}</text>
+    <text x="78" y="530" font-size="13.5" fill="#334155">{{V1_D2}}</text>
+    <text x="64" y="564" font-size="15" font-weight="700" fill="#0E56C9">▪  {{V1_T3}}</text>
+    <text x="78" y="586" font-size="13.5" fill="#334155">{{V1_D3}}</text>
+
+    <rect x="64" y="612" width="312" height="42" rx="21" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1" />
+    <text x="220" y="639" font-size="15" font-weight="700" fill="#C82018" text-anchor="middle">{{V1_TAG}}</text>
+
+    <!-- 箭头 1->2 -->
+    <polygon points="414,438 428,438 428,426 446,450 428,474 428,462 414,462" fill="url(#summitVisionArrow)" />
+
+    <!-- 卡2 -->
+    <rect x="452" y="232" width="376" height="442" rx="20" fill="#FFFFFF" fill-opacity="0.90" stroke="#9FD0FF" stroke-width="1.5" />
+    <rect x="484" y="248" width="312" height="40" rx="20" fill="url(#summitPillBlue)" stroke="#BFDBFE" stroke-width="1" />
+    <text x="640" y="274" font-size="18" font-weight="700" fill="#0F2F7F" text-anchor="middle">{{V2_H}}</text>
+    <image href="{{ICON_2}}" x="580" y="302" width="120" height="120" preserveAspectRatio="xMidYMid meet" />
+
+    <text x="484" y="452" font-size="15" font-weight="700" fill="#0E56C9">▪  {{V2_T1}}</text>
+    <text x="498" y="474" font-size="13.5" fill="#334155">{{V2_D1}}</text>
+    <text x="484" y="508" font-size="15" font-weight="700" fill="#0E56C9">▪  {{V2_T2}}</text>
+    <text x="498" y="530" font-size="13.5" fill="#334155">{{V2_D2}}</text>
+    <text x="484" y="564" font-size="15" font-weight="700" fill="#0E56C9">▪  {{V2_T3}}</text>
+    <text x="498" y="586" font-size="13.5" fill="#334155">{{V2_D3}}</text>
+
+    <rect x="484" y="612" width="312" height="42" rx="21" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1" />
+    <text x="640" y="639" font-size="15" font-weight="700" fill="#C82018" text-anchor="middle">{{V2_TAG}}</text>
+
+    <!-- 箭头 2->3 -->
+    <polygon points="834,438 848,438 848,426 866,450 848,474 848,462 834,462" fill="url(#summitVisionArrow)" />
+
+    <!-- 卡3 -->
+    <rect x="872" y="232" width="376" height="442" rx="20" fill="#FFFFFF" fill-opacity="0.90" stroke="#9FD0FF" stroke-width="1.5" />
+    <rect x="904" y="248" width="312" height="40" rx="20" fill="url(#summitPillBlue)" stroke="#BFDBFE" stroke-width="1" />
+    <text x="1060" y="274" font-size="18" font-weight="700" fill="#0F2F7F" text-anchor="middle">{{V3_H}}</text>
+    <image href="{{ICON_3}}" x="1000" y="302" width="120" height="120" preserveAspectRatio="xMidYMid meet" />
+
+    <text x="904" y="452" font-size="15" font-weight="700" fill="#0E56C9">▪  {{V3_T1}}</text>
+    <text x="918" y="474" font-size="13.5" fill="#334155">{{V3_D1}}</text>
+    <text x="904" y="508" font-size="15" font-weight="700" fill="#0E56C9">▪  {{V3_T2}}</text>
+    <text x="918" y="530" font-size="13.5" fill="#334155">{{V3_D2}}</text>
+    <text x="904" y="564" font-size="15" font-weight="700" fill="#0E56C9">▪  {{V3_T3}}</text>
+    <text x="918" y="586" font-size="13.5" fill="#334155">{{V3_D3}}</text>
+
+    <rect x="904" y="612" width="312" height="42" rx="21" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1" />
+    <text x="1060" y="639" font-size="15" font-weight="700" fill="#C82018" text-anchor="middle">{{V3_TAG}}</text>
+  </g>
+</svg>

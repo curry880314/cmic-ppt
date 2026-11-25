@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+  lang="zh-CN" width="1280" height="720" viewBox="0 0 1280 720"
+  font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif"
+  data-pptx-master="cmic_content_master" data-pptx-master-name="CMIC Content"
+  data-pptx-layout="content" data-pptx-layout-name="Title and Content">
+  <rect id="content-master-bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" data-pptx-layer="master" data-pptx-editable="false"/>
+  <image id="content-master-logo" x="1126" y="10" width="122" height="58" href="../images/logo_cmic.png" preserveAspectRatio="xMidYMid meet" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="content-master-header-rule" x1="32" y1="70" x2="1248" y2="70" stroke="#0070C0" stroke-width="2" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="content-master-footer-rule" x1="32" y1="684" x2="1248" y2="684" stroke="#E2ECF8" stroke-width="1" data-pptx-layer="master" data-pptx-editable="false"/>
+
+  <g id="content-title-slot" data-pptx-placeholder="title" data-pptx-bounds="32 16 1080 48">
+    <text id="content-title-carrier" data-pptx-carrier="true" x="32" y="51" fill="#0070C0" font-size="28" font-weight="700">{{TITLE}}</text>
+  </g>
+  <g id="content-takeaway-slot" data-pptx-placeholder="body" data-pptx-idx="1" data-pptx-bounds="40 78 1200 66">
+    <text id="content-takeaway-carrier" data-pptx-carrier="true" x="640" y="104" text-anchor="middle" fill="#0070C0" font-size="18.5" font-weight="700">{{TAKEAWAY}}</text>
+  </g>
+  <g id="content-object-slot" data-pptx-placeholder="object" data-pptx-idx="2" data-pptx-binding="proxy" data-pptx-bounds="32 156 1216 516">
+    <!-- 顶部通栏定位卡 -->
+    <rect x="32" y="160" width="1216" height="106" rx="10" fill="#F5F9FF" stroke="#0070C0" stroke-width="1.4" />
+    <rect x="48" y="176" width="144" height="74" rx="8" fill="#0070C0" />
+    <text x="120" y="209" font-size="19" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{TOP_TAG}}</text>
+    <text x="120" y="234" font-size="13" fill="#DCEEFF" text-anchor="middle">{{TOP_SUB}}</text>
+    <text x="216" y="205" font-size="20" font-weight="700" fill="#C00000">{{TOP_TITLE}}</text>
+    <text x="216" y="241" font-size="16" fill="#283954">{{TOP_DESC}}</text>
+
+    <!-- 左下四步流程卡 -->
+    <rect x="32" y="286" width="596" height="272" rx="10" fill="#FFFFFF" stroke="#BDD7EE" stroke-width="1.4" />
+    <rect x="32" y="286" width="596" height="44" rx="8" fill="#0F70D7" />
+    <text x="330" y="315" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{LEFT_HEADER}}</text>
+
+    <rect x="52" y="356" width="122" height="148" rx="10" fill="#F5F9FF" stroke="#85B8EC" stroke-width="1.2" />
+    <circle cx="113" cy="390" r="18" fill="#0070C0" /><text x="113" y="396" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">01</text>
+    <text x="113" y="438" font-size="20" font-weight="700" fill="#102C55" text-anchor="middle">{{S1_T}}</text>
+    <text x="113" y="472" font-size="14" fill="#475569" text-anchor="middle">{{S1_D}}</text>
+    <text x="184" y="436" font-size="20" font-weight="700" fill="#0070C0" text-anchor="middle">→</text>
+
+    <rect x="194" y="356" width="122" height="148" rx="10" fill="#F5F9FF" stroke="#85B8EC" stroke-width="1.2" />
+    <circle cx="255" cy="390" r="18" fill="#0070C0" /><text x="255" y="396" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">02</text>
+    <text x="255" y="438" font-size="20" font-weight="700" fill="#102C55" text-anchor="middle">{{S2_T}}</text>
+    <text x="255" y="472" font-size="14" fill="#475569" text-anchor="middle">{{S2_D}}</text>
+    <text x="326" y="436" font-size="20" font-weight="700" fill="#0070C0" text-anchor="middle">→</text>
+
+    <rect x="336" y="356" width="122" height="148" rx="10" fill="#F5F9FF" stroke="#85B8EC" stroke-width="1.2" />
+    <circle cx="397" cy="390" r="18" fill="#0070C0" /><text x="397" y="396" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">03</text>
+    <text x="397" y="438" font-size="20" font-weight="700" fill="#102C55" text-anchor="middle">{{S3_T}}</text>
+    <text x="397" y="472" font-size="14" fill="#475569" text-anchor="middle">{{S3_D}}</text>
+    <text x="468" y="436" font-size="20" font-weight="700" fill="#0070C0" text-anchor="middle">→</text>
+
+    <rect x="478" y="356" width="130" height="148" rx="10" fill="#EAF2FC" stroke="#0070C0" stroke-width="1.4" />
+    <circle cx="543" cy="390" r="18" fill="#C00000" /><text x="543" y="396" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">04</text>
+    <text x="543" y="438" font-size="20" font-weight="700" fill="#0070C0" text-anchor="middle">{{S4_T}}</text>
+    <text x="543" y="472" font-size="14" font-weight="700" fill="#C00000" text-anchor="middle">{{S4_D}}</text>
+    <text x="330" y="538" font-size="14" font-weight="700" fill="#0070C0" text-anchor="middle">{{LEFT_FOOT}}</text>
+
+    <!-- 右下三支柱卡 -->
+    <rect x="652" y="286" width="596" height="272" rx="10" fill="#FFFFFF" stroke="#B7DEC9" stroke-width="1.4" />
+    <rect x="652" y="286" width="596" height="44" rx="8" fill="#108A54" />
+    <text x="950" y="315" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{RIGHT_HEADER}}</text>
+
+    <rect x="672" y="356" width="174" height="148" rx="10" fill="#F4FBF7" stroke="#B7DEC9" stroke-width="1.2" />
+    <rect x="702" y="374" width="114" height="34" rx="17" fill="#108A54" />
+    <text x="759" y="397" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{P1_T}}</text>
+    <text x="759" y="444" font-size="14.5" font-weight="700" fill="#102C55" text-anchor="middle">{{P1_D}}</text>
+
+    <rect x="863" y="356" width="174" height="148" rx="10" fill="#F4FBF7" stroke="#B7DEC9" stroke-width="1.2" />
+    <rect x="893" y="374" width="114" height="34" rx="17" fill="#0070C0" />
+    <text x="950" y="397" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{P2_T}}</text>
+    <text x="950" y="444" font-size="14.5" font-weight="700" fill="#102C55" text-anchor="middle">{{P2_D}}</text>
+
+    <rect x="1054" y="356" width="174" height="148" rx="10" fill="#FFF9F2" stroke="#F7CBA0" stroke-width="1.2" />
+    <rect x="1084" y="374" width="114" height="34" rx="17" fill="#F08200" />
+    <text x="1141" y="397" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{P3_T}}</text>
+    <text x="1141" y="444" font-size="14.5" font-weight="700" fill="#102C55" text-anchor="middle">{{P3_D}}</text>
+    <text x="950" y="538" font-size="14" font-weight="700" fill="#108A54" text-anchor="middle">{{RIGHT_FOOT}}</text>
+
+    <!-- 底部总结条 -->
+    <rect x="32" y="580" width="1216" height="86" rx="10" fill="#F5F9FF" stroke="#0070C0" stroke-width="1.4" />
+    <rect x="46" y="594" width="144" height="58" rx="8" fill="#0070C0" />
+    <text x="118" y="619" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{BOTTOM_TAG}}</text>
+    <text x="218" y="617" font-size="18" font-weight="700" fill="#102C55">{{BOTTOM_L1}}</text>
+    <text x="218" y="647" font-size="16" font-weight="700" fill="#0070C0">{{BOTTOM_L2}}</text>
+  </g>
+  <g id="content-source-slot" data-pptx-placeholder="footer" data-pptx-idx="3" data-pptx-bounds="32 688 900 28">
+    <text id="content-source-carrier" data-pptx-carrier="true" x="32" y="707" fill="#64748B" font-family="Arial, Microsoft YaHei, sans-serif" font-size="12">{{SOURCE}}</text>
+  </g>
+  <g id="content-slide-number-slot" data-pptx-placeholder="slide-number" data-pptx-idx="4" data-pptx-bounds="1188 688 60 28">
+    <text id="content-slide-number-carrier" data-pptx-carrier="true" x="1248" y="707" text-anchor="end" fill="#64748B" font-family="Arial, sans-serif" font-size="13" font-weight="700">{{PAGE_NUM}}</text>
+  </g>
+</svg>

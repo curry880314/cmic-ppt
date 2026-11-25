@@ -1,0 +1,109 @@
+{
+  "id": "cmic-dark-tech-arch",
+  "name": "深蓝科技架构大屏风",
+  "canvas": "1280x720",
+  "accent_color": "#FFC52B",
+  "secondary_accent": "#6ED5FF",
+  "layouts": {
+    "cover": {
+      "file": "cover.svg",
+      "description": "深蓝星空光带封面页（白金双色主标题 + 冰青副标题）",
+      "slots": {
+        "TITLE": {"type": "multiline", "max_chars": 26, "chars_per_line": 14, "max_lines": 2, "dy": 56, "hint": "主标题（可两行，支持 **金字强调**）"},
+        "SUBTITLE": {"type": "text", "max_chars": 38, "hint": "冰青副标题（可用 · 分隔亮点）"},
+        "AUTHOR": {"type": "text", "max_chars": 20, "hint": "汇报单位"},
+        "DATE": {"type": "text", "max_chars": 20, "hint": "日期，如 2026年11月"}
+      }
+    },
+    "arch_left_pain_right": {
+      "file": "arch_left_pain_right.svg",
+      "description": "招牌左70%深蓝架构三列全景+底座公式 -> 右24%攻克痛点深蓝卡",
+      "slots": {
+        "TITLE": {"type": "text", "max_chars": 30, "hint": "居中大标题（可带章节编号）"},
+        "TAKEAWAY": {"type": "multiline", "max_chars": 76, "chars_per_line": 39, "max_lines": 2, "dy": 30, "hint": "微光线居中导语（支持 **金字强调**）"},
+        "PANEL_TITLE": {"type": "text", "max_chars": 24, "hint": "左侧主架构大框顶标题"},
+        "COL1_H": {"type": "text", "max_chars": 12},
+        "COL1_T1": {"type": "text", "max_chars": 13}, "COL1_B1": {"type": "multiline", "max_chars": 34, "chars_per_line": 18, "max_lines": 2, "dy": 18},
+        "COL1_T2": {"type": "text", "max_chars": 13}, "COL1_B2": {"type": "multiline", "max_chars": 34, "chars_per_line": 18, "max_lines": 2, "dy": 18},
+        "COL1_T3": {"type": "text", "max_chars": 13}, "COL1_B3": {"type": "multiline", "max_chars": 34, "chars_per_line": 18, "max_lines": 2, "dy": 18},
+        "COL2_H": {"type": "text", "max_chars": 12},
+        "COL2_T1": {"type": "text", "max_chars": 13}, "COL2_B1": {"type": "multiline", "max_chars": 34, "chars_per_line": 18, "max_lines": 2, "dy": 18},
+        "COL2_T2": {"type": "text", "max_chars": 13}, "COL2_B2": {"type": "multiline", "max_chars": 34, "chars_per_line": 18, "max_lines": 2, "dy": 18},
+        "COL2_T3": {"type": "text", "max_chars": 13}, "COL2_B3": {"type": "multiline", "max_chars": 34, "chars_per_line": 18, "max_lines": 2, "dy": 18},
+        "COL3_H": {"type": "text", "max_chars": 12},
+        "COL3_T1": {"type": "text", "max_chars": 13}, "COL3_B1": {"type": "multiline", "max_chars": 34, "chars_per_line": 18, "max_lines": 2, "dy": 18},
+        "COL3_T2": {"type": "text", "max_chars": 13}, "COL3_B2": {"type": "multiline", "max_chars": 34, "chars_per_line": 18, "max_lines": 2, "dy": 18},
+        "COL3_T3": {"type": "text", "max_chars": 13}, "COL3_B3": {"type": "multiline", "max_chars": 34, "chars_per_line": 18, "max_lines": 2, "dy": 18},
+        "BASE_T": {"type": "text", "max_chars": 10}, "BASE_SUB": {"type": "text", "max_chars": 10},
+        "F1_T": {"type": "text", "max_chars": 8}, "F1_D": {"type": "text", "max_chars": 10},
+        "F2_T": {"type": "text", "max_chars": 8}, "F2_D": {"type": "text", "max_chars": 10},
+        "F3_T": {"type": "text", "max_chars": 10}, "F3_D": {"type": "text", "max_chars": 14},
+        "ARROW_LABEL": {"type": "text", "max_chars": 4, "default": "攻克痛点"},
+        "RIGHT_TITLE": {"type": "multiline", "max_chars": 24, "chars_per_line": 10, "max_lines": 3, "dy": 30, "hint": "右卡标题（支持 **金字强调** 与换行）"},
+        "R1_T": {"type": "text", "max_chars": 12}, "R1_B": {"type": "multiline", "max_chars": 42, "chars_per_line": 15, "max_lines": 3, "dy": 21},
+        "R2_T": {"type": "text", "max_chars": 12}, "R2_B": {"type": "multiline", "max_chars": 42, "chars_per_line": 15, "max_lines": 3, "dy": 21},
+        "R3_T": {"type": "text", "max_chars": 12}, "R3_B": {"type": "multiline", "max_chars": 42, "chars_per_line": 15, "max_lines": 3, "dy": 21},
+        "PAGE_NUM": {"type": "text", "max_chars": 4, "default": ""}
+      }
+    },
+    "two_col_gap": {
+      "file": "two_col_gap.svg",
+      "description": "深蓝左右双栏落差/对照页 + 中间渐变箭头 + 底部双行高亮收束",
+      "slots": {
+        "TITLE": {"type": "text", "max_chars": 30},
+        "TAKEAWAY": {"type": "multiline", "max_chars": 76, "chars_per_line": 39, "max_lines": 2, "dy": 30},
+        "LEFT_HEADER": {"type": "text", "max_chars": 28, "hint": "左卡标题（支持 **金字**）"},
+        "L1_T": {"type": "text", "max_chars": 28, "accent_color": "#6ED5FF"}, "L1_B": {"type": "multiline", "max_chars": 58, "chars_per_line": 32, "max_lines": 2, "dy": 19},
+        "L2_T": {"type": "text", "max_chars": 28, "accent_color": "#6ED5FF"}, "L2_B": {"type": "multiline", "max_chars": 58, "chars_per_line": 32, "max_lines": 2, "dy": 19},
+        "L3_T": {"type": "text", "max_chars": 28, "accent_color": "#6ED5FF"}, "L3_B": {"type": "multiline", "max_chars": 58, "chars_per_line": 32, "max_lines": 2, "dy": 19},
+        "ARROW_LABEL": {"type": "text", "max_chars": 4, "default": "挑战"},
+        "RIGHT_HEADER": {"type": "text", "max_chars": 28, "hint": "右卡标题（支持 **金字**）"},
+        "R1_TAG": {"type": "text", "max_chars": 6}, "R1_B": {"type": "multiline", "max_chars": 34, "chars_per_line": 19, "max_lines": 2, "dy": 21},
+        "R2_TAG": {"type": "text", "max_chars": 6}, "R2_B": {"type": "multiline", "max_chars": 34, "chars_per_line": 19, "max_lines": 2, "dy": 21},
+        "R3_TAG": {"type": "text", "max_chars": 6}, "R3_B": {"type": "multiline", "max_chars": 34, "chars_per_line": 19, "max_lines": 2, "dy": 21},
+        "BOTTOM_L1": {"type": "text", "max_chars": 48, "hint": "底部第1行总结（支持 **金字**）"},
+        "BOTTOM_L2": {"type": "text", "max_chars": 50, "hint": "底部第2行高对比度收束句"},
+        "PAGE_NUM": {"type": "text", "max_chars": 4, "default": ""}
+      }
+    },
+    "four_step_showcase": {
+      "file": "four_step_showcase.svg",
+      "description": "通栏深蓝大框 + 四步真机截图/流程卡 + 底部四格衔接与双底座服务",
+      "slots": {
+        "TITLE": {"type": "text", "max_chars": 30},
+        "TAKEAWAY": {"type": "multiline", "max_chars": 76, "chars_per_line": 39, "max_lines": 2, "dy": 30},
+        "S1_T": {"type": "text", "max_chars": 12}, "IMG_1": {"type": "image"}, "S1_D": {"type": "multiline", "max_chars": 34, "chars_per_line": 18, "max_lines": 2, "dy": 18},
+        "S2_T": {"type": "text", "max_chars": 12}, "IMG_2": {"type": "image"}, "S2_D": {"type": "multiline", "max_chars": 34, "chars_per_line": 18, "max_lines": 2, "dy": 18},
+        "S3_T": {"type": "text", "max_chars": 12}, "IMG_3": {"type": "image"}, "S3_D": {"type": "multiline", "max_chars": 34, "chars_per_line": 18, "max_lines": 2, "dy": 18},
+        "S4_T": {"type": "text", "max_chars": 12}, "IMG_4": {"type": "image"}, "S4_D": {"type": "multiline", "max_chars": 34, "chars_per_line": 18, "max_lines": 2, "dy": 18},
+        "BRIDGE_TITLE": {"type": "text", "max_chars": 10},
+        "B1": {"type": "text", "max_chars": 11}, "B2": {"type": "text", "max_chars": 11}, "B3": {"type": "text", "max_chars": 11}, "B4": {"type": "text", "max_chars": 11},
+        "BASE_LABEL": {"type": "text", "max_chars": 10},
+        "BASE_1": {"type": "text", "max_chars": 20}, "BASE_2": {"type": "text", "max_chars": 20},
+        "PAGE_NUM": {"type": "text", "max_chars": 4, "default": ""}
+      }
+    },
+    "three_col_dark_value": {
+      "file": "three_col_dark_value.svg",
+      "description": "三栏深蓝共赢价值页（第3栏金边高亮，每栏3组金标+冰青重点正文）+ 底部光带总结",
+      "slots": {
+        "TITLE": {"type": "text", "max_chars": 32},
+        "TAKEAWAY": {"type": "multiline", "max_chars": 76, "chars_per_line": 39, "max_lines": 2, "dy": 30},
+        "C1_H": {"type": "text", "max_chars": 10},
+        "C1_T1": {"type": "text", "max_chars": 18}, "C1_B1": {"type": "multiline", "max_chars": 44, "chars_per_line": 22, "max_lines": 2, "dy": 22, "accent_color": "#6ED5FF"},
+        "C1_T2": {"type": "text", "max_chars": 18}, "C1_B2": {"type": "multiline", "max_chars": 44, "chars_per_line": 22, "max_lines": 2, "dy": 22, "accent_color": "#6ED5FF"},
+        "C1_T3": {"type": "text", "max_chars": 18}, "C1_B3": {"type": "multiline", "max_chars": 44, "chars_per_line": 22, "max_lines": 2, "dy": 22, "accent_color": "#6ED5FF"},
+        "C2_H": {"type": "text", "max_chars": 10},
+        "C2_T1": {"type": "text", "max_chars": 18}, "C2_B1": {"type": "multiline", "max_chars": 44, "chars_per_line": 22, "max_lines": 2, "dy": 22, "accent_color": "#6ED5FF"},
+        "C2_T2": {"type": "text", "max_chars": 18}, "C2_B2": {"type": "multiline", "max_chars": 44, "chars_per_line": 22, "max_lines": 2, "dy": 22, "accent_color": "#6ED5FF"},
+        "C2_T3": {"type": "text", "max_chars": 18}, "C2_B3": {"type": "multiline", "max_chars": 44, "chars_per_line": 22, "max_lines": 2, "dy": 22, "accent_color": "#6ED5FF"},
+        "C3_H": {"type": "text", "max_chars": 10},
+        "C3_T1": {"type": "text", "max_chars": 18}, "C3_B1": {"type": "multiline", "max_chars": 44, "chars_per_line": 22, "max_lines": 2, "dy": 22, "accent_color": "#6ED5FF"},
+        "C3_T2": {"type": "text", "max_chars": 18}, "C3_B2": {"type": "multiline", "max_chars": 44, "chars_per_line": 22, "max_lines": 2, "dy": 22, "accent_color": "#6ED5FF"},
+        "C3_T3": {"type": "text", "max_chars": 18}, "C3_B3": {"type": "multiline", "max_chars": 44, "chars_per_line": 22, "max_lines": 2, "dy": 22, "accent_color": "#6ED5FF"},
+        "BOTTOM_SUMMARY": {"type": "text", "max_chars": 54, "hint": "底部光带总结（支持 **金字强调**）"},
+        "PAGE_NUM": {"type": "text", "max_chars": 4, "default": ""}
+      }
+    }
+  }
+}

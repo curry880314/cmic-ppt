@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+  lang="zh-CN" width="1280" height="720" viewBox="0 0 1280 720"
+  font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif"
+  data-pptx-master="cmic_brand_master" data-pptx-master-name="CMIC Brand"
+  data-pptx-layout="cover" data-pptx-layout-name="Cover">
+  <image id="brand-master-bg" x="0" y="0" width="1280" height="720"
+    href="../images/bg_cover_cmic.png" preserveAspectRatio="none"
+    data-pptx-layer="master" data-pptx-editable="false"/>
+  <image id="brand-master-logo" x="1096" y="24" width="144" height="68"
+    href="../images/logo_cmic.png" preserveAspectRatio="xMidYMid meet"
+    data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="cover-meta-rule" x="560" y="446" width="160" height="3" rx="1.5" fill="#0070C0"
+    data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="cover-title-slot" data-pptx-placeholder="title" data-pptx-bounds="100 198 1080 138">
+    <text id="cover-title-carrier" data-pptx-carrier="true" x="640" y="260" text-anchor="middle" fill="#0070C0" font-size="44" font-weight="700">{{TITLE}}</text>
+  </g>
+  <g id="cover-subtitle-slot" data-pptx-placeholder="subtitle" data-pptx-idx="1" data-pptx-bounds="160 352 960 52">
+    <text id="cover-subtitle-carrier" data-pptx-carrier="true" x="640" y="386" text-anchor="middle" fill="#4A607A" font-size="21">{{SUBTITLE}}</text>
+  </g>
+  <g id="cover-author-slot" data-pptx-placeholder="body" data-pptx-idx="2" data-pptx-bounds="390 462 500 42">
+    <text id="cover-author-carrier" data-pptx-carrier="true" x="640" y="492" text-anchor="middle" fill="#102C55" font-size="21" font-weight="700">{{AUTHOR}}</text>
+  </g>
+  <g id="cover-date-slot" data-pptx-placeholder="date" data-pptx-idx="3" data-pptx-bounds="440 508 400 36">
+    <text id="cover-date-carrier" data-pptx-carrier="true" x="640" y="532" text-anchor="middle" fill="#4A607A" font-family="Arial, Microsoft YaHei, sans-serif" font-size="17">{{DATE}}</text>
+  </g>
+</svg>

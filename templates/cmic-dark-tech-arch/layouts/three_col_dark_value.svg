@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+  lang="zh-CN" width="1280" height="720" viewBox="0 0 1280 720"
+  font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif"
+  data-pptx-master="cmic_dark_arch_master" data-pptx-master-name="CMIC Dark Arch"
+  data-pptx-layout="content" data-pptx-layout-name="Dark Architecture">
+  <defs>
+    <linearGradient id="darkValCardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#13386B" stop-opacity="0.78" />
+      <stop offset="100%" stop-color="#0A1F42" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+
+  <image id="dark-arch-bg" x="0" y="0" width="1280" height="720"
+    href="../images/bg_dark_tech.png" preserveAspectRatio="none"
+    data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="dark-arch-top-line" x="140" y="108" width="1000" height="2" fill="#65BCEB" fill-opacity="0.55"
+    data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="dark-arch-bot-line" x="140" y="196" width="1000" height="1.5" fill="#408FB3" fill-opacity="0.5"
+    data-pptx-layer="master" data-pptx-editable="false"/>
+
+  <g id="content-title-slot" data-pptx-placeholder="title" data-pptx-bounds="64 26 1152 68">
+    <text id="content-title-carrier" data-pptx-carrier="true" x="640" y="76" text-anchor="middle" fill="#FFFFFF" font-size="33" font-weight="700">{{TITLE}}</text>
+  </g>
+  <g id="content-takeaway-slot" data-pptx-placeholder="body" data-pptx-idx="1" data-pptx-bounds="80 116 1120 74">
+    <text id="content-takeaway-carrier" data-pptx-carrier="true" x="640" y="144" text-anchor="middle" fill="#F4F7FC" font-size="18.5" font-weight="700">{{TAKEAWAY}}</text>
+  </g>
+
+  <g id="content-object-slot" data-pptx-placeholder="object" data-pptx-idx="2" data-pptx-binding="proxy" data-pptx-bounds="32 212 1216 474">
+    <!-- 左卡 -->
+    <rect x="32" y="218" width="388" height="402" rx="20" fill="url(#darkValCardGrad)" stroke="#4A98D1" stroke-width="1.5" />
+    <rect x="106" y="236" width="240" height="42" rx="21" fill="#174074" stroke="#65BCEB" stroke-width="1.2" />
+    <text x="226" y="264" font-size="19" font-weight="700" fill="#6ED5FF" text-anchor="middle">{{C1_H}}</text>
+
+    <text x="54" y="314" font-size="16" font-weight="700" fill="#FFC52B">{{C1_T1}}</text>
+    <text x="54" y="340" font-size="13.5" fill="#DCE8F8">{{C1_B1}}</text>
+    <line x1="54" y1="382" x2="398" y2="382" stroke="#315C80" stroke-width="1" />
+    <text x="54" y="414" font-size="16" font-weight="700" fill="#FFC52B">{{C1_T2}}</text>
+    <text x="54" y="440" font-size="13.5" fill="#DCE8F8">{{C1_B2}}</text>
+    <line x1="54" y1="482" x2="398" y2="482" stroke="#315C80" stroke-width="1" />
+    <text x="54" y="514" font-size="16" font-weight="700" fill="#FFC52B">{{C1_T3}}</text>
+    <text x="54" y="540" font-size="13.5" fill="#DCE8F8">{{C1_B3}}</text>
+
+    <!-- 中卡 -->
+    <rect x="446" y="218" width="388" height="402" rx="20" fill="url(#darkValCardGrad)" stroke="#4A98D1" stroke-width="1.5" />
+    <rect x="520" y="236" width="240" height="42" rx="21" fill="#174074" stroke="#65BCEB" stroke-width="1.2" />
+    <text x="640" y="264" font-size="19" font-weight="700" fill="#6ED5FF" text-anchor="middle">{{C2_H}}</text>
+
+    <text x="468" y="314" font-size="16" font-weight="700" fill="#FFC52B">{{C2_T1}}</text>
+    <text x="468" y="340" font-size="13.5" fill="#DCE8F8">{{C2_B1}}</text>
+    <line x1="468" y1="382" x2="812" y2="382" stroke="#315C80" stroke-width="1" />
+    <text x="468" y="414" font-size="16" font-weight="700" fill="#FFC52B">{{C2_T2}}</text>
+    <text x="468" y="440" font-size="13.5" fill="#DCE8F8">{{C2_B2}}</text>
+    <line x1="468" y1="482" x2="812" y2="482" stroke="#315C80" stroke-width="1" />
+    <text x="468" y="514" font-size="16" font-weight="700" fill="#FFC52B">{{C2_T3}}</text>
+    <text x="468" y="540" font-size="13.5" fill="#DCE8F8">{{C2_B3}}</text>
+
+    <!-- 右卡（金边高亮） -->
+    <rect x="860" y="218" width="388" height="402" rx="20" fill="url(#darkValCardGrad)" stroke="#FFC52B" stroke-width="1.5" />
+    <rect x="934" y="236" width="240" height="42" rx="21" fill="#174074" stroke="#FFC52B" stroke-width="1.2" />
+    <text x="1054" y="264" font-size="19" font-weight="700" fill="#FFC52B" text-anchor="middle">{{C3_H}}</text>
+
+    <text x="882" y="314" font-size="16" font-weight="700" fill="#FFC52B">{{C3_T1}}</text>
+    <text x="882" y="340" font-size="13.5" fill="#DCE8F8">{{C3_B1}}</text>
+    <line x1="882" y1="382" x2="1226" y2="382" stroke="#315C80" stroke-width="1" />
+    <text x="882" y="414" font-size="16" font-weight="700" fill="#FFC52B">{{C3_T2}}</text>
+    <text x="882" y="440" font-size="13.5" fill="#DCE8F8">{{C3_B2}}</text>
+    <line x1="882" y1="482" x2="1226" y2="482" stroke="#315C80" stroke-width="1" />
+    <text x="882" y="514" font-size="16" font-weight="700" fill="#FFC52B">{{C3_T3}}</text>
+    <text x="882" y="540" font-size="13.5" fill="#DCE8F8">{{C3_B3}}</text>
+
+    <!-- 底部科技总结光带 -->
+    <rect x="32" y="636" width="1216" height="44" rx="10" fill="#0B2040" fill-opacity="0.92" stroke="#408FB3" stroke-width="1.2" />
+    <text x="640" y="664" font-size="16" font-weight="700" fill="#F4F7FC" text-anchor="middle">{{BOTTOM_SUMMARY}}</text>
+  </g>
+
+  <g id="content-slide-number-slot" data-pptx-placeholder="slide-number" data-pptx-idx="3" data-pptx-bounds="1208 682 56 32">
+    <text id="content-slide-number-carrier" data-pptx-carrier="true" x="1256" y="704" text-anchor="end" fill="#C7D9EC" font-family="Arial, sans-serif" font-size="15" font-weight="700">{{PAGE_NUM}}</text>
+  </g>
+</svg>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+  lang="zh-CN" width="1280" height="720" viewBox="0 0 1280 720"
+  font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif"
+  data-pptx-master="cmic_3d_summit_master" data-pptx-master-name="CMIC 3D Summit"
+  data-pptx-layout="summit_content" data-pptx-layout-name="Summit Content">
+  <defs>
+    <linearGradient id="summitPedestalBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0E5FD8" />
+      <stop offset="50%" stop-color="#1E88F5" />
+      <stop offset="100%" stop-color="#0E5FD8" />
+    </linearGradient>
+    <linearGradient id="summitArrowCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+  </defs>
+
+  <image id="summit-master-bg" x="0" y="0" width="1280" height="720"
+    href="../images/bg_summit_3d.png" preserveAspectRatio="none"
+    data-pptx-layer="master" data-pptx-editable="false"/>
+
+  <g id="summit-banner-slot" data-pptx-placeholder="body" data-pptx-idx="1" data-pptx-bounds="160 12 960 56">
+    <text id="summit-banner-carrier" data-pptx-carrier="true" x="640" y="54" text-anchor="middle" fill="#FFFFFF" font-size="28" font-weight="700">{{BANNER_TOP}}</text>
+  </g>
+  <g id="summit-subbanner-slot" data-pptx-placeholder="body" data-pptx-idx="2" data-pptx-bounds="200 68 880 38">
+    <text id="summit-subbanner-carrier" data-pptx-carrier="true" x="640" y="96" text-anchor="middle" fill="#E6F2FF" font-size="20" font-weight="700">{{BANNER_SUB}}</text>
+  </g>
+  <g id="summit-title-slot" data-pptx-placeholder="title" data-pptx-bounds="80 124 1120 84">
+    <text id="summit-title-carrier" data-pptx-carrier="true" x="640" y="162" text-anchor="middle" fill="#0F2F7F" font-size="25" font-weight="700">{{HEADLINE}}</text>
+  </g>
+
+  <g id="summit-object-slot" data-pptx-placeholder="object" data-pptx-idx="3" data-pptx-binding="proxy" data-pptx-bounds="32 220 1216 476">
+    <!-- 四步能力玻璃卡 -->
+    <rect x="64" y="232" width="246" height="220" rx="18" fill="#FFFFFF" fill-opacity="0.90" stroke="#A6D4FF" stroke-width="1.5" />
+    <image href="{{ICON_1}}" x="129" y="248" width="116" height="116" preserveAspectRatio="xMidYMid meet" />
+    <text x="187" y="396" font-size="19" font-weight="700" fill="#0F2F7F" text-anchor="middle">{{S1_T}}</text>
+
+    <polygon points="322,330 342,330 342,320 358,342 342,364 342,354 322,354" fill="url(#summitArrowCyan)" />
+
+    <rect x="366" y="232" width="246" height="220" rx="18" fill="#FFFFFF" fill-opacity="0.90" stroke="#A6D4FF" stroke-width="1.5" />
+    <image href="{{ICON_2}}" x="431" y="248" width="116" height="116" preserveAspectRatio="xMidYMid meet" />
+    <text x="489" y="396" font-size="19" font-weight="700" fill="#0F2F7F" text-anchor="middle">{{S2_T}}</text>
+
+    <polygon points="624,330 644,330 644,320 660,342 644,364 644,354 624,354" fill="url(#summitArrowCyan)" />
+
+    <rect x="668" y="232" width="246" height="220" rx="18" fill="#FFFFFF" fill-opacity="0.90" stroke="#A6D4FF" stroke-width="1.5" />
+    <image href="{{ICON_3}}" x="733" y="248" width="116" height="116" preserveAspectRatio="xMidYMid meet" />
+    <text x="791" y="396" font-size="19" font-weight="700" fill="#0F2F7F" text-anchor="middle">{{S3_T}}</text>
+
+    <polygon points="926,330 946,330 946,320 962,342 946,364 946,354 926,354" fill="url(#summitArrowCyan)" />
+
+    <rect x="970" y="232" width="246" height="220" rx="18" fill="#FFFFFF" fill-opacity="0.90" stroke="#A6D4FF" stroke-width="1.5" />
+    <image href="{{ICON_4}}" x="1035" y="248" width="116" height="116" preserveAspectRatio="xMidYMid meet" />
+    <text x="1093" y="396" font-size="19" font-weight="700" fill="#0F2F7F" text-anchor="middle">{{S4_T}}</text>
+
+    <!-- 三大蓝玻底座支柱 -->
+    <rect x="64" y="482" width="360" height="96" rx="16" fill="url(#summitPedestalBlue)" stroke="#7DD3FC" stroke-width="1.5" />
+    <image href="{{PILLAR_ICON_1}}" x="92" y="494" width="72" height="72" preserveAspectRatio="xMidYMid meet" />
+    <line x1="184" y1="506" x2="184" y2="554" stroke="#93C5FD" stroke-width="1.5" />
+    <text x="294" y="540" font-size="24" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{P1_T}}</text>
+
+    <rect x="460" y="482" width="360" height="96" rx="16" fill="url(#summitPedestalBlue)" stroke="#7DD3FC" stroke-width="1.5" />
+    <image href="{{PILLAR_ICON_2}}" x="488" y="494" width="72" height="72" preserveAspectRatio="xMidYMid meet" />
+    <line x1="580" y1="506" x2="580" y2="554" stroke="#93C5FD" stroke-width="1.5" />
+    <text x="690" y="540" font-size="24" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{P2_T}}</text>
+
+    <rect x="856" y="482" width="360" height="96" rx="16" fill="url(#summitPedestalBlue)" stroke="#7DD3FC" stroke-width="1.5" />
+    <image href="{{PILLAR_ICON_3}}" x="884" y="494" width="72" height="72" preserveAspectRatio="xMidYMid meet" />
+    <line x1="976" y1="506" x2="976" y2="554" stroke="#93C5FD" stroke-width="1.5" />
+    <text x="1086" y="540" font-size="24" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{P3_T}}</text>
+
+    <!-- 底部收束说明 -->
+    <text x="640" y="632" font-size="18" font-weight="700" fill="#0F2F7F" text-anchor="middle">{{BOTTOM_NOTE}}</text>
+  </g>
+</svg>
