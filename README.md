@@ -37,12 +37,15 @@
 
 ### 方式 A：在 WorkBuddy 里发一句话自动安装（推荐）
 
-> 如果本仓库为团队私有仓库，请先联系仓库管理员把你的 GitHub 账号加入访问权限（Collaborator），并确认本机 Git 已登录 GitHub。
-
 把下面这句话直接发给 WorkBuddy（或其他 AI Agent）：
 
 ```text
 请帮我把仓库 https://github.com/curry880314/cmic-ppt.git 克隆安装到 ~/.workbuddy/skills/cmic-ppt，运行 pip install -r ~/.workbuddy/skills/cmic-ppt/requirements.txt 安装依赖，然后执行 python ~/.workbuddy/skills/cmic-ppt/scripts/ppt_cli.py check-env 验证安装成功。
+```
+
+**后续版本一键同步更新**：当团队新增模板或升级引擎时，同事只需发给 WorkBuddy 一句话：
+```text
+请进入 ~/.workbuddy/skills/cmic-ppt 执行 git pull 拉取最新版 cmic-ppt，并运行 check-env 确认环境正常。
 ```
 
 ### 方式 B：离线压缩包安装（无需 GitHub 账号与外网）
