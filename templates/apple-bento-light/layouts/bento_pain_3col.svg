@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+  lang="zh-CN" width="1280" height="720" viewBox="0 0 1280 720"
+  font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif"
+  data-pptx-master="bento_content_master" data-pptx-master-name="Bento Content Master"
+  data-pptx-layout="content" data-pptx-layout-name="Bento Content">
+  <rect id="bento-bg" x="0" y="0" width="1280" height="720" fill="#F5F5F7" data-pptx-layer="master" data-pptx-editable="false"/>
+
+  <g id="bento-kicker-slot" data-pptx-placeholder="body" data-pptx-idx="1" data-pptx-bounds="40 20 360 28">
+    <text id="bento-kicker-carrier" data-pptx-carrier="true" x="40" y="40" fill="#2563EB" font-size="13" font-weight="700">{{KICKER}}</text>
+  </g>
+  <g id="bento-title-slot" data-pptx-placeholder="title" data-pptx-bounds="40 46 1160 44">
+    <text id="bento-title-carrier" data-pptx-carrier="true" x="40" y="80" fill="#0F172A" font-size="28" font-weight="700">{{TITLE}}</text>
+  </g>
+  <g id="bento-takeaway-slot" data-pptx-placeholder="body" data-pptx-idx="2" data-pptx-bounds="40 94 1200 58">
+    <text id="bento-takeaway-carrier" data-pptx-carrier="true" x="40" y="116" fill="#475569" font-size="16" font-weight="700">{{TAKEAWAY}}</text>
+  </g>
+
+  <g id="bento-object-slot" data-pptx-placeholder="object" data-pptx-idx="3" data-pptx-binding="proxy" data-pptx-bounds="40 160 1200 524">
+    <!-- 列1 -->
+    <rect x="40" y="164" width="384" height="410" rx="22" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.2" />
+    <rect x="64" y="186" width="116" height="30" rx="15" fill="#EFF6FF" />
+    <text x="122" y="206" font-size="14" font-weight="700" fill="#2563EB" text-anchor="middle">{{C1_TAG}}</text>
+
+    <text x="64" y="250" font-size="16" font-weight="700" fill="#0F172A">01  {{C1_T1}}</text>
+    <text x="64" y="276" font-size="13.5" fill="#475569">{{C1_B1}}</text>
+    <line x1="64" y1="316" x2="400" y2="316" stroke="#F1F5F9" stroke-width="1.2" />
+
+    <text x="64" y="348" font-size="16" font-weight="700" fill="#0F172A">02  {{C1_T2}}</text>
+    <text x="64" y="374" font-size="13.5" fill="#475569">{{C1_B2}}</text>
+    <line x1="64" y1="414" x2="400" y2="414" stroke="#F1F5F9" stroke-width="1.2" />
+
+    <text x="64" y="446" font-size="16" font-weight="700" fill="#0F172A">03  {{C1_T3}}</text>
+    <text x="64" y="472" font-size="13.5" fill="#475569">{{C1_B3}}</text>
+
+    <!-- 列2 -->
+    <rect x="448" y="164" width="384" height="410" rx="22" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.2" />
+    <rect x="472" y="186" width="116" height="30" rx="15" fill="#ECFDF5" />
+    <text x="530" y="206" font-size="14" font-weight="700" fill="#059669" text-anchor="middle">{{C2_TAG}}</text>
+
+    <text x="472" y="250" font-size="16" font-weight="700" fill="#0F172A">01  {{C2_T1}}</text>
+    <text x="472" y="276" font-size="13.5" fill="#475569">{{C2_B1}}</text>
+    <line x1="472" y1="316" x2="808" y2="316" stroke="#F1F5F9" stroke-width="1.2" />
+
+    <text x="472" y="348" font-size="16" font-weight="700" fill="#0F172A">02  {{C2_T2}}</text>
+    <text x="472" y="374" font-size="13.5" fill="#475569">{{C2_B2}}</text>
+    <line x1="472" y1="414" x2="808" y2="414" stroke="#F1F5F9" stroke-width="1.2" />
+
+    <text x="472" y="446" font-size="16" font-weight="700" fill="#0F172A">03  {{C2_T3}}</text>
+    <text x="472" y="472" font-size="13.5" fill="#475569">{{C2_B3}}</text>
+
+    <!-- 列3 -->
+    <rect x="856" y="164" width="384" height="410" rx="22" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.2" />
+    <rect x="880" y="186" width="132" height="30" rx="15" fill="#FFF7ED" />
+    <text x="946" y="206" font-size="14" font-weight="700" fill="#EA580C" text-anchor="middle">{{C3_TAG}}</text>
+
+    <text x="880" y="250" font-size="16" font-weight="700" fill="#0F172A">01  {{C3_T1}}</text>
+    <text x="880" y="276" font-size="13.5" fill="#475569">{{C3_B1}}</text>
+    <line x1="880" y1="316" x2="1216" y2="316" stroke="#F1F5F9" stroke-width="1.2" />
+
+    <text x="880" y="348" font-size="16" font-weight="700" fill="#0F172A">02  {{C3_T2}}</text>
+    <text x="880" y="374" font-size="13.5" fill="#475569">{{C3_B2}}</text>
+    <line x1="880" y1="414" x2="1216" y2="414" stroke="#F1F5F9" stroke-width="1.2" />
+
+    <text x="880" y="446" font-size="16" font-weight="700" fill="#0F172A">03  {{C3_T3}}</text>
+    <text x="880" y="472" font-size="13.5" fill="#475569">{{C3_B3}}</text>
+
+    <!-- 底部深黑 Bento 英雄收束条 -->
+    <rect x="40" y="592" width="1200" height="86" rx="20" fill="#0F172A" />
+    <rect x="64" y="614" width="144" height="42" rx="21" fill="#2563EB" />
+    <text x="136" y="641" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{HERO_TAG}}</text>
+
+    <rect x="232" y="612" width="160" height="46" rx="12" fill="#1E293B" />
+    <text x="312" y="641" font-size="15" font-weight="700" fill="#F8FAFC" text-anchor="middle">{{S1}}</text>
+    <text x="410" y="642" font-size="18" font-weight="700" fill="#60A5FA" text-anchor="middle">+</text>
+
+    <rect x="428" y="612" width="160" height="46" rx="12" fill="#1E293B" />
+    <text x="508" y="641" font-size="15" font-weight="700" fill="#F8FAFC" text-anchor="middle">{{S2}}</text>
+    <text x="606" y="642" font-size="18" font-weight="700" fill="#60A5FA" text-anchor="middle">+</text>
+
+    <rect x="624" y="612" width="168" height="46" rx="12" fill="#1E293B" />
+    <text x="708" y="641" font-size="15" font-weight="700" fill="#F8FAFC" text-anchor="middle">{{S3}}</text>
+    <text x="812" y="642" font-size="20" font-weight="700" fill="#60A5FA" text-anchor="middle">→</text>
+
+    <text x="836" y="641" font-size="18" font-weight="700" fill="#FFFFFF">{{HERO_RES}}</text>
+  </g>
+
+  <g id="bento-page-slot" data-pptx-placeholder="slide-number" data-pptx-idx="4" data-pptx-bounds="1192 686 48 28">
+    <text id="bento-page-carrier" data-pptx-carrier="true" x="1240" y="706" text-anchor="end" fill="#94A3B8" font-family="Arial, sans-serif" font-size="13" font-weight="700">{{PAGE_NUM}}</text>
+  </g>
+</svg>

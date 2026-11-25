@@ -787,6 +787,7 @@ $outDir = '{str(preview_dir).replace("'", "''")}'
 $app = $null
 $pres = $null
 $engine = ''
+$hadExisting = $false
 try {{
     try {{
         $app = New-Object -ComObject KWPP.Application
@@ -795,7 +796,13 @@ try {{
         $app = New-Object -ComObject PowerPoint.Application
         $engine = 'PowerPoint'
     }}
-    $pres = $app.Presentations.Open($pptxPath, -1, 0, 0)
+    try {{ $app.DisplayAlerts = 1 }} catch {{}}
+    try {{ $hadExisting = ($app.Presentations.Count -gt 0) }} catch {{}}
+    try {{
+        $pres = $app.Presentations.Open($pptxPath, -1, 0, 0)
+    }} catch {{
+        $pres = $app.Presentations.Open($pptxPath, -1, 0, -1)
+    }}
     $count = $pres.Slides.Count
     for ($i = 1; $i -le $count; $i++) {{
         $png = Join-Path $outDir ("slide_{{0:D2}}.png" -f $i)
@@ -808,7 +815,11 @@ try {{
         [System.Runtime.InteropServices.Marshal]::ReleaseComObject($pres) | Out-Null
     }}
     if ($app -ne $null) {{
-        try {{ $app.Quit() }} catch {{}}
+        $remain = 0
+        try {{ $remain = $app.Presentations.Count }} catch {{}}
+        if ((-not $hadExisting) -and ($remain -eq 0)) {{
+            try {{ $app.Quit() }} catch {{}}
+        }}
         [System.Runtime.InteropServices.Marshal]::ReleaseComObject($app) | Out-Null
     }}
 }}
@@ -820,18 +831,28 @@ try {{
         ps_file = Path(tf.name)
 
     try:
-        proc = subprocess.run(
-            ["powershell", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", str(ps_file)],
-            capture_output=True,
-            text=True,
-            encoding="utf-8",
-            errors="replace",
-        )
-        if proc.returncode != 0:
-            die(
-                "PPTX 渲染 PNG 失败（请确认本机已安装 WPS 演示或 Microsoft PowerPoint）：\n"
-                + (proc.stderr.strip() or proc.stdout.strip())
+        try:
+            proc = subprocess.run(
+                ["powershell", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", str(ps_file)],
+                capture_output=True,
+                text=True,
+                encoding="utf-8",
+                errors="replace",
+                timeout=60,
             )
+        except subprocess.TimeoutExpired:
+            print(
+                "[WARN] WPS/PowerPoint COM 渲染超时（可能本机 WPS 正处于弹窗或占用状态），已跳过预览图渲染；.pptx 已正常导出。",
+                file=sys.stderr,
+            )
+            return sorted(preview_dir.glob("slide_*.png"))
+        if proc.returncode != 0:
+            print(
+                "[WARN] PPTX 渲染 PNG 失败（.pptx 已正常导出）：\n"
+                + (proc.stderr.strip() or proc.stdout.strip()),
+                file=sys.stderr,
+            )
+            return sorted(preview_dir.glob("slide_*.png"))
     finally:
         ps_file.unlink(missing_ok=True)
 

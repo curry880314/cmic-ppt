@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+  lang="zh-CN" width="1280" height="720" viewBox="0 0 1280 720"
+  font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif"
+  data-pptx-master="mck_content_master" data-pptx-master-name="McKinsey Editorial Content"
+  data-pptx-layout="content" data-pptx-layout-name="Editorial Content">
+  <rect id="mck-bg" x="0" y="0" width="1280" height="720" fill="#F7F5F0" data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="mck-top-bar" x="0" y="0" width="1280" height="5" fill="#141923" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="mck-hdr-rule" x1="44" y1="86" x2="1236" y2="86" stroke="#141923" stroke-width="1.5" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="mck-ftr-rule" x1="44" y1="684" x2="1236" y2="684" stroke="#D8D2C5" stroke-width="1" data-pptx-layer="master" data-pptx-editable="false"/>
+
+  <g id="mck-section-slot" data-pptx-placeholder="body" data-pptx-idx="1" data-pptx-bounds="44 16 420 24">
+    <text id="mck-section-carrier" data-pptx-carrier="true" x="44" y="34" fill="#C83E2B" font-size="12.5" font-weight="700">{{SECTION}}</text>
+  </g>
+  <g id="mck-title-slot" data-pptx-placeholder="title" data-pptx-bounds="44 40 1192 42">
+    <text id="mck-title-carrier" data-pptx-carrier="true" x="44" y="74" fill="#141923" font-size="26" font-weight="700">{{TITLE}}</text>
+  </g>
+  <g id="mck-takeaway-slot" data-pptx-placeholder="body" data-pptx-idx="2" data-pptx-bounds="44 94 1192 54">
+    <text id="mck-takeaway-carrier" data-pptx-carrier="true" x="44" y="116" fill="#374151" font-size="15.5" font-weight="700">{{TAKEAWAY}}</text>
+  </g>
+
+  <g id="mck-object-slot" data-pptx-placeholder="object" data-pptx-idx="3" data-pptx-binding="proxy" data-pptx-bounds="44 156 1192 520">
+    <!-- 列1 -->
+    <rect x="44" y="160" width="380" height="430" fill="#FFFFFF" stroke="#D8D2C5" stroke-width="1.2" />
+    <rect x="44" y="160" width="380" height="5" fill="#C83E2B" />
+    <text x="68" y="210" font-size="30" font-weight="700" fill="#E5DCD0">01</text>
+    <text x="118" y="202" font-size="19" font-weight="700" fill="#141923">{{C1_H}}</text>
+    <text x="118" y="224" font-size="12.5" fill="#C83E2B" font-weight="700">{{C1_SUB}}</text>
+    <line x1="68" y1="242" x2="400" y2="242" stroke="#E5E0D5" stroke-width="1.2" />
+
+    <text x="68" y="274" font-size="15.5" font-weight="700" fill="#141923">▪  {{C1_T1}}</text>
+    <text x="68" y="298" font-size="13.5" fill="#4B5563">{{C1_B1}}</text>
+    <line x1="68" y1="346" x2="400" y2="346" stroke="#EFECE6" stroke-width="1" />
+
+    <text x="68" y="378" font-size="15.5" font-weight="700" fill="#141923">▪  {{C1_T2}}</text>
+    <text x="68" y="402" font-size="13.5" fill="#4B5563">{{C1_B2}}</text>
+    <line x1="68" y1="450" x2="400" y2="450" stroke="#EFECE6" stroke-width="1" />
+
+    <text x="68" y="482" font-size="15.5" font-weight="700" fill="#141923">▪  {{C1_T3}}</text>
+    <text x="68" y="506" font-size="13.5" fill="#4B5563">{{C1_B3}}</text>
+
+    <!-- 列2 -->
+    <rect x="450" y="160" width="380" height="430" fill="#FFFFFF" stroke="#D8D2C5" stroke-width="1.2" />
+    <rect x="450" y="160" width="380" height="5" fill="#1E3A5F" />
+    <text x="474" y="210" font-size="30" font-weight="700" fill="#E5DCD0">02</text>
+    <text x="524" y="202" font-size="19" font-weight="700" fill="#141923">{{C2_H}}</text>
+    <text x="524" y="224" font-size="12.5" fill="#1E3A5F" font-weight="700">{{C2_SUB}}</text>
+    <line x1="474" y1="242" x2="806" y2="242" stroke="#E5E0D5" stroke-width="1.2" />
+
+    <text x="474" y="274" font-size="15.5" font-weight="700" fill="#141923">▪  {{C2_T1}}</text>
+    <text x="474" y="298" font-size="13.5" fill="#4B5563">{{C2_B1}}</text>
+    <line x1="474" y1="346" x2="806" y2="346" stroke="#EFECE6" stroke-width="1" />
+
+    <text x="474" y="378" font-size="15.5" font-weight="700" fill="#141923">▪  {{C2_T2}}</text>
+    <text x="474" y="402" font-size="13.5" fill="#4B5563">{{C2_B2}}</text>
+    <line x1="474" y1="450" x2="806" y2="450" stroke="#EFECE6" stroke-width="1" />
+
+    <text x="474" y="482" font-size="15.5" font-weight="700" fill="#141923">▪  {{C2_T3}}</text>
+    <text x="474" y="506" font-size="13.5" fill="#4B5563">{{C2_B3}}</text>
+
+    <!-- 列3 -->
+    <rect x="856" y="160" width="380" height="430" fill="#FFFFFF" stroke="#D8D2C5" stroke-width="1.2" />
+    <rect x="856" y="160" width="380" height="5" fill="#141923" />
+    <text x="880" y="210" font-size="30" font-weight="700" fill="#E5DCD0">03</text>
+    <text x="930" y="202" font-size="19" font-weight="700" fill="#141923">{{C3_H}}</text>
+    <text x="930" y="224" font-size="12.5" fill="#4B5563" font-weight="700">{{C3_SUB}}</text>
+    <line x1="880" y1="242" x2="1212" y2="242" stroke="#E5E0D5" stroke-width="1.2" />
+
+    <text x="880" y="274" font-size="15.5" font-weight="700" fill="#141923">▪  {{C3_T1}}</text>
+    <text x="880" y="298" font-size="13.5" fill="#4B5563">{{C3_B1}}</text>
+    <line x1="880" y1="346" x2="1212" y2="346" stroke="#EFECE6" stroke-width="1" />
+
+    <text x="880" y="378" font-size="15.5" font-weight="700" fill="#141923">▪  {{C3_T2}}</text>
+    <text x="880" y="402" font-size="13.5" fill="#4B5563">{{C3_B2}}</text>
+    <line x1="880" y1="450" x2="1212" y2="450" stroke="#EFECE6" stroke-width="1" />
+
+    <text x="880" y="482" font-size="15.5" font-weight="700" fill="#141923">▪  {{C3_T3}}</text>
+    <text x="880" y="506" font-size="13.5" fill="#4B5563">{{C3_B3}}</text>
+
+    <!-- 底部炭黑定论条 -->
+    <rect x="44" y="608" width="1192" height="62" fill="#141923" />
+    <rect x="44" y="608" width="144" height="62" fill="#C83E2B" />
+    <text x="116" y="645" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{THESIS_TAG}}</text>
+    <text x="214" y="645" font-size="16" font-weight="700" fill="#F7F5F0">{{THESIS_TEXT}}</text>
+  </g>
+
+  <g id="mck-source-slot" data-pptx-placeholder="footer" data-pptx-idx="4" data-pptx-bounds="44 688 940 26">
+    <text id="mck-source-carrier" data-pptx-carrier="true" x="44" y="707" fill="#6B7280" font-size="11.5">{{SOURCE}}</text>
+  </g>
+  <g id="mck-page-slot" data-pptx-placeholder="slide-number" data-pptx-idx="5" data-pptx-bounds="1184 688 52 26">
+    <text id="mck-page-carrier" data-pptx-carrier="true" x="1236" y="707" text-anchor="end" fill="#141923" font-family="Arial, sans-serif" font-size="12.5" font-weight="700">{{PAGE_NUM}}</text>
+  </g>
+</svg>

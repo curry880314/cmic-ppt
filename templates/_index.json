@@ -18,6 +18,24 @@
       "name": "3D 蓝玻大会视觉风",
       "description": "深蓝光效大会顶栏 + 浅冰蓝舞台底图 + 半透明玻璃卡片 + 预置 8 枚透明 3D 蓝玻图标（免生图直接选）；适合行业交流会、对外发布。",
       "path": "cmic-3d-summit"
+    },
+    {
+      "id": "apple-bento-light",
+      "name": "苹果极简 Bento 发布会风",
+      "description": "浅霜灰底 + 纯白超大圆角 Bento 网格卡 + 深黑反色英雄卡 + 电光钴蓝点缀；适合互联网/AI 产品发布、体验与方案升级汇报。",
+      "path": "apple-bento-light"
+    },
+    {
+      "id": "mckinsey-editorial",
+      "name": "顶级咨询暖纸杂志极简风",
+      "description": "暖米白宣纸底色 + 深炭黑建筑分割线 + 朱砂红强调 + 巨型 KPI 杂志排版；适合高层战略研判、行业调研、高密度商业汇报。",
+      "path": "mckinsey-editorial"
+    },
+    {
+      "id": "cyber-obsidian-grid",
+      "name": "曜石黑翠绿 AI 算力发布会风",
+      "description": "纯黑曜石网格底 + 霓虹翠绿与琥珀高对比遥测仪表盘 + 模块化算力架构矩阵；适合 AI 基础设施、算力运营与安全风控发布会。",
+      "path": "cyber-obsidian-grid"
     }
   ]
 }

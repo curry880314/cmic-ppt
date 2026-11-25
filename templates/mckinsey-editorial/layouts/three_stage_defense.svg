@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+  lang="zh-CN" width="1280" height="720" viewBox="0 0 1280 720"
+  font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif"
+  data-pptx-master="mck_content_master" data-pptx-master-name="McKinsey Editorial Content"
+  data-pptx-layout="content" data-pptx-layout-name="Editorial Content">
+  <rect id="mck-bg" x="0" y="0" width="1280" height="720" fill="#F7F5F0" data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="mck-top-bar" x="0" y="0" width="1280" height="5" fill="#141923" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="mck-hdr-rule" x1="44" y1="86" x2="1236" y2="86" stroke="#141923" stroke-width="1.5" data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="mck-ftr-rule" x1="44" y1="684" x2="1236" y2="684" stroke="#D8D2C5" stroke-width="1" data-pptx-layer="master" data-pptx-editable="false"/>
+
+  <g id="mck-section-slot" data-pptx-placeholder="body" data-pptx-idx="1" data-pptx-bounds="44 16 420 24">
+    <text id="mck-section-carrier" data-pptx-carrier="true" x="44" y="34" fill="#C83E2B" font-size="12.5" font-weight="700">{{SECTION}}</text>
+  </g>
+  <g id="mck-title-slot" data-pptx-placeholder="title" data-pptx-bounds="44 40 1192 42">
+    <text id="mck-title-carrier" data-pptx-carrier="true" x="44" y="74" fill="#141923" font-size="26" font-weight="700">{{TITLE}}</text>
+  </g>
+  <g id="mck-takeaway-slot" data-pptx-placeholder="body" data-pptx-idx="2" data-pptx-bounds="44 94 1192 54">
+    <text id="mck-takeaway-carrier" data-pptx-carrier="true" x="44" y="116" fill="#374151" font-size="15.5" font-weight="700">{{TAKEAWAY}}</text>
+  </g>
+
+  <g id="mck-object-slot" data-pptx-placeholder="object" data-pptx-idx="3" data-pptx-binding="proxy" data-pptx-bounds="44 156 1192 520">
+    <!-- 顶部风险警示横带 -->
+    <rect x="44" y="160" width="1192" height="90" fill="#FDF2F0" stroke="#EAC2BA" stroke-width="1.2" />
+    <rect x="44" y="160" width="136" height="90" fill="#C83E2B" />
+    <text x="112" y="211" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{RISK_TAG}}</text>
+    <text x="202" y="196" font-size="14.5" font-weight="700" fill="#7F1D1D">①  {{RISK_L1}}</text>
+    <text x="202" y="230" font-size="14.5" fill="#7F1D1D">②  {{RISK_L2}}</text>
+
+    <!-- 三段式防线卡片 -->
+    <!-- 阶段1 -->
+    <rect x="44" y="274" width="368" height="316" fill="#FFFFFF" stroke="#D8D2C5" stroke-width="1.2" />
+    <rect x="44" y="274" width="368" height="56" fill="#1E3A5F" />
+    <text x="66" y="296" font-size="11.5" font-weight="700" fill="#93C5FD">{{S1_PHASE}}</text>
+    <text x="66" y="319" font-size="17.5" font-weight="700" fill="#FFFFFF">{{S1_H}}</text>
+    <text x="66" y="366" font-size="14" fill="#1F2937">▪  {{S1_I1}}</text>
+    <line x1="66" y1="418" x2="388" y2="418" stroke="#EFECE6" stroke-width="1" />
+    <text x="66" y="450" font-size="14" fill="#1F2937">▪  {{S1_I2}}</text>
+    <line x1="66" y1="502" x2="388" y2="502" stroke="#EFECE6" stroke-width="1" />
+    <text x="66" y="534" font-size="14" fill="#1F2937">▪  {{S1_I3}}</text>
+
+    <polygon points="420,420 434,420 434,410 448,432 434,454 434,444 420,444" fill="#C83E2B" />
+
+    <!-- 阶段2 -->
+    <rect x="456" y="274" width="368" height="316" fill="#FFFFFF" stroke="#D8D2C5" stroke-width="1.2" />
+    <rect x="456" y="274" width="368" height="56" fill="#C83E2B" />
+    <text x="478" y="296" font-size="11.5" font-weight="700" fill="#FDE68A">{{S2_PHASE}}</text>
+    <text x="478" y="319" font-size="17.5" font-weight="700" fill="#FFFFFF">{{S2_H}}</text>
+    <text x="478" y="366" font-size="14" fill="#1F2937">▪  {{S2_I1}}</text>
+    <line x1="478" y1="418" x2="800" y2="418" stroke="#EFECE6" stroke-width="1" />
+    <text x="478" y="450" font-size="14" fill="#1F2937">▪  {{S2_I2}}</text>
+    <line x1="478" y1="502" x2="800" y2="502" stroke="#EFECE6" stroke-width="1" />
+    <text x="478" y="534" font-size="14" fill="#1F2937">▪  {{S2_I3}}</text>
+
+    <polygon points="832,420 846,420 846,410 860,432 846,454 846,444 832,444" fill="#C83E2B" />
+
+    <!-- 阶段3 -->
+    <rect x="868" y="274" width="368" height="316" fill="#FFFFFF" stroke="#D8D2C5" stroke-width="1.2" />
+    <rect x="868" y="274" width="368" height="56" fill="#141923" />
+    <text x="890" y="296" font-size="11.5" font-weight="700" fill="#F59E0B">{{S3_PHASE}}</text>
+    <text x="890" y="319" font-size="17.5" font-weight="700" fill="#FFFFFF">{{S3_H}}</text>
+    <text x="890" y="366" font-size="14" fill="#1F2937">▪  {{S3_I1}}</text>
+    <line x1="890" y1="418" x2="1212" y2="418" stroke="#EFECE6" stroke-width="1" />
+    <text x="890" y="450" font-size="14" fill="#1F2937">▪  {{S3_I2}}</text>
+    <line x1="890" y1="502" x2="1212" y2="502" stroke="#EFECE6" stroke-width="1" />
+    <text x="890" y="534" font-size="14" fill="#1F2937">▪  {{S3_I3}}</text>
+
+    <!-- 底部落地建议 -->
+    <rect x="44" y="610" width="1192" height="60" fill="#141923" />
+    <rect x="44" y="610" width="144" height="60" fill="#1E3A5F" />
+    <text x="116" y="646" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{REC_TAG}}</text>
+    <text x="214" y="646" font-size="15.5" font-weight="700" fill="#F7F5F0">{{REC_TEXT}}</text>
+  </g>
+
+  <g id="mck-source-slot" data-pptx-placeholder="footer" data-pptx-idx="4" data-pptx-bounds="44 688 940 26">
+    <text id="mck-source-carrier" data-pptx-carrier="true" x="44" y="707" fill="#6B7280" font-size="11.5">{{SOURCE}}</text>
+  </g>
+  <g id="mck-page-slot" data-pptx-placeholder="slide-number" data-pptx-idx="5" data-pptx-bounds="1184 688 52 26">
+    <text id="mck-page-carrier" data-pptx-carrier="true" x="1236" y="707" text-anchor="end" fill="#141923" font-family="Arial, sans-serif" font-size="12.5" font-weight="700">{{PAGE_NUM}}</text>
+  </g>
+</svg>

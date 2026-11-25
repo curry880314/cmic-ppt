@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+  lang="zh-CN" width="1280" height="720" viewBox="0 0 1280 720"
+  font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif"
+  data-pptx-master="obs_cover_master" data-pptx-master-name="Obsidian Cover Master"
+  data-pptx-layout="cover" data-pptx-layout-name="Obsidian Cover">
+  <defs>
+    <linearGradient id="obsGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#090B10" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <rect id="obs-cover-bg" x="0" y="0" width="1280" height="720" fill="#090B10" data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="obs-cover-glow" x="0" y="0" width="640" height="360" fill="url(#obsGlow)" data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="obs-cover-accent" x="72" y="168" width="6" height="176" fill="#10B981" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <line id="obs-cover-rule-top" x1="72" y1="96" x2="1208" y2="96" stroke="#1E2534" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+  <line id="obs-cover-rule-bot" x1="72" y1="628" x2="1208" y2="628" stroke="#1E2534" stroke-width="1" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="cover-tag-slot" data-pptx-placeholder="body" data-pptx-idx="1" data-pptx-bounds="72 52 720 34">
+    <text id="cover-tag-carrier" data-pptx-carrier="true" x="72" y="76" fill="#34D399" font-family="Consolas, Arial, Microsoft YaHei, sans-serif" font-size="14" font-weight="700">{{SYS_TAG}}</text>
+  </g>
+  <g id="cover-title-slot" data-pptx-placeholder="title" data-pptx-bounds="104 164 1080 156">
+    <text id="cover-title-carrier" data-pptx-carrier="true" x="104" y="226" fill="#F8FAFC" font-size="48" font-weight="700">{{TITLE}}</text>
+  </g>
+  <g id="cover-subtitle-slot" data-pptx-placeholder="subtitle" data-pptx-idx="2" data-pptx-bounds="104 330 1040 48">
+    <text id="cover-subtitle-carrier" data-pptx-carrier="true" x="104" y="364" fill="#94A3B8" font-size="19">{{SUBTITLE}}</text>
+  </g>
+  <g id="cover-object-slot" data-pptx-placeholder="object" data-pptx-idx="3" data-pptx-binding="proxy" data-pptx-bounds="72 440 1136 146">
+    <rect x="72" y="446" width="356" height="126" rx="10" fill="#11151E" stroke="#10B981" stroke-width="1.2" />
+    <text x="100" y="508" font-size="38" font-weight="700" fill="#34D399">{{K1_V}}</text>
+    <text x="100" y="544" font-size="14.5" fill="#CBD5E1">{{K1_L}}</text>
+
+    <rect x="462" y="446" width="356" height="126" rx="10" fill="#11151E" stroke="#222938" stroke-width="1.2" />
+    <text x="490" y="508" font-size="38" font-weight="700" fill="#F8FAFC">{{K2_V}}</text>
+    <text x="490" y="544" font-size="14.5" fill="#CBD5E1">{{K2_L}}</text>
+
+    <rect x="852" y="446" width="356" height="126" rx="10" fill="#11151E" stroke="#222938" stroke-width="1.2" />
+    <text x="880" y="508" font-size="38" font-weight="700" fill="#F59E0B">{{K3_V}}</text>
+    <text x="880" y="544" font-size="14.5" fill="#CBD5E1">{{K3_L}}</text>
+  </g>
+  <g id="cover-meta-slot" data-pptx-placeholder="footer" data-pptx-idx="4" data-pptx-bounds="72 642 1136 34">
+    <text id="cover-meta-carrier" data-pptx-carrier="true" x="1208" y="666" text-anchor="end" fill="#64748B" font-size="14">{{META}}</text>
+  </g>
+</svg>

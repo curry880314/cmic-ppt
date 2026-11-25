@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+  lang="zh-CN" width="1280" height="720" viewBox="0 0 1280 720"
+  font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif"
+  data-pptx-master="bento_content_master" data-pptx-master-name="Bento Content Master"
+  data-pptx-layout="content" data-pptx-layout-name="Bento Content">
+  <rect id="bento-bg" x="0" y="0" width="1280" height="720" fill="#F5F5F7" data-pptx-layer="master" data-pptx-editable="false"/>
+
+  <g id="bento-kicker-slot" data-pptx-placeholder="body" data-pptx-idx="1" data-pptx-bounds="40 20 360 28">
+    <text id="bento-kicker-carrier" data-pptx-carrier="true" x="40" y="40" fill="#2563EB" font-size="13" font-weight="700">{{KICKER}}</text>
+  </g>
+  <g id="bento-title-slot" data-pptx-placeholder="title" data-pptx-bounds="40 46 1160 44">
+    <text id="bento-title-carrier" data-pptx-carrier="true" x="40" y="80" fill="#0F172A" font-size="28" font-weight="700">{{TITLE}}</text>
+  </g>
+  <g id="bento-takeaway-slot" data-pptx-placeholder="body" data-pptx-idx="2" data-pptx-bounds="40 94 1200 58">
+    <text id="bento-takeaway-carrier" data-pptx-carrier="true" x="40" y="122" fill="#475569" font-size="16" font-weight="700">{{TAKEAWAY}}</text>
+  </g>
+
+  <g id="bento-object-slot" data-pptx-placeholder="object" data-pptx-idx="3" data-pptx-binding="proxy" data-pptx-bounds="40 160 1200 524">
+    <!-- 4 步纯白真机 Bento 卡 -->
+    <rect x="40" y="164" width="282" height="398" rx="22" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.2" />
+    <circle cx="72" cy="196" r="14" fill="#0F172A" /><text x="72" y="201" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="96" y="202" font-size="16.5" font-weight="700" fill="#0F172A">{{S1_T}}</text>
+    <rect x="110" y="220" width="142" height="256" rx="16" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.4" />
+    <image href="{{IMG_1}}" x="115" y="226" width="132" height="244" preserveAspectRatio="xMidYMid meet" />
+    <text x="181" y="506" font-size="13" fill="#475569" text-anchor="middle">{{S1_D}}</text>
+
+    <rect x="346" y="164" width="282" height="398" rx="22" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.2" />
+    <circle cx="378" cy="196" r="14" fill="#2563EB" /><text x="378" y="201" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="402" y="202" font-size="16.5" font-weight="700" fill="#0F172A">{{S2_T}}</text>
+    <rect x="416" y="220" width="142" height="256" rx="16" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.4" />
+    <image href="{{IMG_2}}" x="421" y="226" width="132" height="244" preserveAspectRatio="xMidYMid meet" />
+    <text x="487" y="506" font-size="13" fill="#475569" text-anchor="middle">{{S2_D}}</text>
+
+    <rect x="652" y="164" width="282" height="398" rx="22" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.2" />
+    <circle cx="684" cy="196" r="14" fill="#0F172A" /><text x="684" y="201" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="708" y="202" font-size="16.5" font-weight="700" fill="#0F172A">{{S3_T}}</text>
+    <rect x="722" y="220" width="142" height="256" rx="16" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.4" />
+    <image href="{{IMG_3}}" x="727" y="226" width="132" height="244" preserveAspectRatio="xMidYMid meet" />
+    <text x="793" y="506" font-size="13" fill="#475569" text-anchor="middle">{{S3_D}}</text>
+
+    <rect x="958" y="164" width="282" height="398" rx="22" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.2" />
+    <circle cx="990" cy="196" r="14" fill="#2563EB" /><text x="990" y="201" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+    <text x="1014" y="202" font-size="16.5" font-weight="700" fill="#0F172A">{{S4_T}}</text>
+    <rect x="1028" y="220" width="142" height="256" rx="16" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.4" />
+    <image href="{{IMG_4}}" x="1033" y="226" width="132" height="244" preserveAspectRatio="xMidYMid meet" />
+    <text x="1099" y="506" font-size="13" fill="#475569" text-anchor="middle">{{S4_D}}</text>
+
+    <!-- 底部深黑统一底座 -->
+    <rect x="40" y="580" width="1200" height="98" rx="20" fill="#0F172A" />
+    <text x="68" y="618" font-size="14" font-weight="700" fill="#60A5FA">{{BASE_TAG}}</text>
+
+    <rect x="210" y="594" width="232" height="34" rx="8" fill="#1E293B" />
+    <text x="326" y="616" font-size="13.5" font-weight="700" fill="#F8FAFC" text-anchor="middle">{{B1}}</text>
+    <rect x="458" y="594" width="232" height="34" rx="8" fill="#1E293B" />
+    <text x="574" y="616" font-size="13.5" font-weight="700" fill="#F8FAFC" text-anchor="middle">{{B2}}</text>
+    <rect x="706" y="594" width="232" height="34" rx="8" fill="#1E293B" />
+    <text x="822" y="616" font-size="13.5" font-weight="700" fill="#F8FAFC" text-anchor="middle">{{B3}}</text>
+    <rect x="954" y="594" width="260" height="34" rx="8" fill="#1E293B" />
+    <text x="1084" y="616" font-size="13.5" font-weight="700" fill="#F8FAFC" text-anchor="middle">{{B4}}</text>
+
+    <rect x="210" y="638" width="480" height="28" rx="7" fill="#1D4ED8" />
+    <text x="450" y="657" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{INFRA_1}}</text>
+    <rect x="706" y="638" width="508" height="28" rx="7" fill="#1D4ED8" />
+    <text x="960" y="657" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">{{INFRA_2}}</text>
+  </g>
+
+  <g id="bento-page-slot" data-pptx-placeholder="slide-number" data-pptx-idx="4" data-pptx-bounds="1192 686 48 28">
+    <text id="bento-page-carrier" data-pptx-carrier="true" x="1240" y="706" text-anchor="end" fill="#94A3B8" font-family="Arial, sans-serif" font-size="13" font-weight="700">{{PAGE_NUM}}</text>
+  </g>
+</svg>

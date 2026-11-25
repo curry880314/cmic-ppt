@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+  lang="zh-CN" width="1280" height="720" viewBox="0 0 1280 720"
+  font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif"
+  data-pptx-master="bento_cover_master" data-pptx-master-name="Bento Cover Master"
+  data-pptx-layout="cover" data-pptx-layout-name="Bento Cover">
+  <defs>
+    <linearGradient id="bentoOrb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DBEAFE" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#EDE9FE" stop-opacity="0.3" />
+    </linearGradient>
+  </defs>
+
+  <rect id="bento-cover-bg" x="0" y="0" width="1280" height="720" fill="#F5F5F7" data-pptx-layer="master" data-pptx-editable="false"/>
+  <circle id="bento-cover-orb" cx="1060" cy="140" r="240" fill="url(#bentoOrb)" data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="bento-cover-card" x="64" y="64" width="1152" height="592" rx="28" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.2" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="cover-badge-slot" data-pptx-placeholder="body" data-pptx-idx="1" data-pptx-bounds="112 108 420 40">
+    <text id="cover-badge-carrier" data-pptx-carrier="true" x="112" y="135" fill="#2563EB" font-size="14" font-weight="700">{{BADGE}}</text>
+  </g>
+  <g id="cover-title-slot" data-pptx-placeholder="title" data-pptx-bounds="112 170 1040 156">
+    <text id="cover-title-carrier" data-pptx-carrier="true" x="112" y="232" fill="#0F172A" font-size="48" font-weight="700">{{TITLE}}</text>
+  </g>
+  <g id="cover-subtitle-slot" data-pptx-placeholder="subtitle" data-pptx-idx="2" data-pptx-bounds="112 332 980 48">
+    <text id="cover-subtitle-carrier" data-pptx-carrier="true" x="112" y="366" fill="#475569" font-size="20">{{SUBTITLE}}</text>
+  </g>
+  <g id="cover-object-slot" data-pptx-placeholder="object" data-pptx-idx="3" data-pptx-binding="proxy" data-pptx-bounds="112 426 1056 176">
+    <!-- 3 枚底部 Bento 亮点指标卡 -->
+    <rect x="112" y="432" width="320" height="122" rx="18" fill="#0F172A" />
+    <text x="140" y="492" font-size="34" font-weight="700" fill="#60A5FA">{{M1_V}}</text>
+    <text x="140" y="528" font-size="15" fill="#CBD5E1">{{M1_L}}</text>
+
+    <rect x="452" y="432" width="320" height="122" rx="18" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.2" />
+    <text x="480" y="492" font-size="34" font-weight="700" fill="#0F172A">{{M2_V}}</text>
+    <text x="480" y="528" font-size="15" fill="#64748B">{{M2_L}}</text>
+
+    <rect x="792" y="432" width="376" height="122" rx="18" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1.2" />
+    <text x="820" y="492" font-size="34" font-weight="700" fill="#2563EB">{{M3_V}}</text>
+    <text x="820" y="528" font-size="15" fill="#1E40AF">{{M3_L}}</text>
+  </g>
+  <g id="cover-meta-slot" data-pptx-placeholder="footer" data-pptx-idx="4" data-pptx-bounds="112 602 1056 32">
+    <text id="cover-meta-carrier" data-pptx-carrier="true" x="1168" y="624" text-anchor="end" fill="#64748B" font-size="14">{{META}}</text>
+  </g>
+</svg>
