@@ -825,7 +825,7 @@ try {{
 }}
 """
     with tempfile.NamedTemporaryFile(
-        mode="w", suffix=".ps1", encoding="utf-8", delete=False
+        mode="w", suffix=".ps1", encoding="utf-8-sig", delete=False
     ) as tf:
         tf.write(ps_script)
         ps_file = Path(tf.name)
