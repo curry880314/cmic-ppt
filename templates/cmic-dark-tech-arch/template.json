@@ -104,6 +104,49 @@
         "BOTTOM_SUMMARY": {"type": "text", "max_chars": 54, "hint": "底部光带总结（支持 **金字强调**）"},
         "PAGE_NUM": {"type": "text", "max_chars": 4, "default": ""}
       }
+    },
+    "ecosystem_hub_arch": {
+      "file": "ecosystem_hub_arch.svg",
+      "description": "生态中枢连接架构全景页：左生态应用列表 + 中上部旧流程vs极简方案对比 + 底部微光四能力平台底座 + 右双供给块 -> 右侧24%四统一规范与典型落地卡",
+      "slots": {
+        "TITLE": {"type": "text", "max_chars": 30},
+        "TAKEAWAY": {"type": "multiline", "max_chars": 76, "chars_per_line": 39, "max_lines": 2, "dy": 30},
+        "PANEL_TITLE": {"type": "text", "max_chars": 24, "hint": "左侧主架构大框顶标题"},
+        "LEFT_COL_H": {"type": "text", "max_chars": 12, "default": "Agent / APP"},
+        "IMG_APP1": {"type": "image", "hint": "生态应用1 Logo（可留空自动显示极简圆标）"}, "APP1_NAME": {"type": "text", "max_chars": 12},
+        "IMG_APP2": {"type": "image", "hint": "生态应用2 Logo（可留空）"}, "APP2_NAME": {"type": "text", "max_chars": 12},
+        "IMG_APP3": {"type": "image", "hint": "生态应用3 Logo（可留空）"}, "APP3_NAME": {"type": "text", "max_chars": 12},
+        "IMG_APP4": {"type": "image", "hint": "生态应用4 Logo（可留空）"}, "APP4_NAME": {"type": "text", "max_chars": 12},
+        "LEFT_ARROW_T1": {"type": "text", "max_chars": 4, "default": "调用"},
+        "LEFT_ARROW_T2": {"type": "text", "max_chars": 4, "default": "SDK"},
+        "COMPARE_TITLE": {"type": "text", "max_chars": 28, "hint": "中区对比标题（支持 **金字强调**）"},
+        "OLD_CHAIN_TITLE": {"type": "text", "max_chars": 30},
+        "OLD_S1": {"type": "text", "max_chars": 6},
+        "OLD_S2": {"type": "multiline", "max_chars": 18, "chars_per_line": 9, "max_lines": 2, "dy": 16},
+        "OLD_S3": {"type": "multiline", "max_chars": 18, "chars_per_line": 9, "max_lines": 2, "dy": 16},
+        "OLD_S4": {"type": "text", "max_chars": 6},
+        "NEW_BOX_TITLE": {"type": "text", "max_chars": 28},
+        "NEW_BOX_DESC": {"type": "text", "max_chars": 30},
+        "HUB_TITLE": {"type": "text", "max_chars": 24},
+        "CAP_1": {"type": "text", "max_chars": 6},
+        "CAP_2": {"type": "text", "max_chars": 6},
+        "CAP_3": {"type": "text", "max_chars": 6},
+        "CAP_4": {"type": "text", "max_chars": 6},
+        "RIGHT_ARROW_TOP": {"type": "text", "max_chars": 5, "default": "服务接入"},
+        "RIGHT_ARROW_BOT": {"type": "text", "max_chars": 5, "default": "调用鉴权"},
+        "SUPPLY_COL_H": {"type": "text", "max_chars": 10, "default": "Token 套餐"},
+        "SUPPLY_1_T": {"type": "text", "max_chars": 8}, "SUPPLY_1_SUB": {"type": "text", "max_chars": 8},
+        "SUPPLY_2_T": {"type": "text", "max_chars": 8}, "SUPPLY_2_SUB": {"type": "text", "max_chars": 8},
+        "ARROW_LABEL": {"type": "text", "max_chars": 4, "default": "极简赋能"},
+        "RIGHT_TITLE": {"type": "multiline", "max_chars": 24, "chars_per_line": 10, "max_lines": 3, "dy": 30, "hint": "右卡标题（支持 **金字强调** 与换行）"},
+        "STD_1": {"type": "text", "max_chars": 12},
+        "STD_2": {"type": "text", "max_chars": 12},
+        "STD_3": {"type": "text", "max_chars": 12},
+        "STD_4": {"type": "text", "max_chars": 12},
+        "CASE_TITLE": {"type": "text", "max_chars": 20},
+        "CASE_DESC": {"type": "text", "max_chars": 20},
+        "PAGE_NUM": {"type": "text", "max_chars": 4, "default": ""}
+      }
     }
   }
 }

@@ -365,8 +365,14 @@ def replace_empty_image_tag(svg_text: str, token: str) -> str:
         wm = re.search(r'\bwidth\s*=\s*"([0-9.]+)"', tag)
         hm = re.search(r'\bheight\s*=\s*"([0-9.]+)"', tag)
         if xm and ym and wm and hm:
-            cx = float(xm.group(1)) + float(wm.group(1)) / 2.0
-            cy = float(ym.group(1)) + float(hm.group(1)) / 2.0 + 5.0
+            w_val = float(wm.group(1))
+            cx = float(xm.group(1)) + w_val / 2.0
+            cy = float(ym.group(1)) + float(hm.group(1)) / 2.0 + 4.0
+            if w_val <= 56:
+                return (
+                    f'<text x="{cx:g}" y="{cy:g}" font-size="11" font-weight="700" fill="#174074" '
+                    f'text-anchor="middle">APP</text>'
+                )
             return (
                 f'<text x="{cx:g}" y="{cy:g}" font-size="13" fill="#94A3B8" '
                 f'text-anchor="middle">待补位截图</text>'
