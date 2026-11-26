@@ -29,41 +29,43 @@
 
 ---
 
-## 三、同事如何安装（支持 WorkBuddy / Claude Code / Codex / Antigravity）
+## 三、如何安装（适配任意支持 Skill 的 AI Agent）
+
+支持 WorkBuddy、Claude Code、Codex、Cursor、Antigravity 等所有支持 `SKILL.md` 规范的 AI Agent，**在哪个 Agent 里发指令就会装到对应环境**。
 
 ### 前置环境
-- Python 3.10 及以上（Windows 命令行输入 `python --version` 确认）
+- Python 3.10 及以上（终端输入 `python --version` 确认）
 - （可选）Windows 下已安装 WPS 演示或 Microsoft PowerPoint，可开启自动出预览图
 
-### 方式 A：在 WorkBuddy 里发一句话自动安装（推荐）
+### 方式 A：发给你的 AI Agent 一句话自动安装（推荐）
 
-把下面这句话直接发给 WorkBuddy（或其他 AI Agent）：
+直接把下面这句话发给你正在使用的 AI Agent：
 
 ```text
-请帮我把仓库 https://github.com/curry880314/cmic-ppt.git 克隆安装到 ~/.workbuddy/skills/cmic-ppt，运行 pip install -r ~/.workbuddy/skills/cmic-ppt/requirements.txt 安装依赖，然后执行 python ~/.workbuddy/skills/cmic-ppt/scripts/ppt_cli.py check-env 验证安装成功。
+请帮我从 https://github.com/curry880314/cmic-ppt.git 克隆安装 cmic-ppt Skill 到你当前环境默认的 skills 目录（确保目录内直接包含 SKILL.md），运行该目录下的 pip install -r requirements.txt 安装依赖，然后执行 python scripts/ppt_cli.py check-env 验证安装成功。
 ```
 
-**后续版本一键同步更新**：当团队新增模板或升级引擎时，同事只需发给 WorkBuddy 一句话：
+**后续版本一键同步更新**：当仓库新增模板或升级引擎时，发给你正在使用的 Agent 一句话即可：
 ```text
-请进入 ~/.workbuddy/skills/cmic-ppt 执行 git pull 拉取最新版 cmic-ppt，并运行 check-env 确认环境正常。
+请进入我本地已安装的 cmic-ppt Skill 目录执行 git pull 拉取最新版本，如有新增依赖自动补装，并运行 python scripts/ppt_cli.py check-env 验证环境正常。
 ```
 
 ### 方式 B：离线压缩包安装（无需 GitHub 账号与外网）
 
-1. 获取管理员发来的 `cmic-ppt.zip` 压缩包；
-2. 解压到 WorkBuddy 的技能目录：`C:\Users\<你的用户名>\.workbuddy\skills\cmic-ppt`（确保该目录下直接能看到 `SKILL.md`）；
-3. 在终端执行一次依赖安装与自检：
+1. 获取 `cmic-ppt.zip` 压缩包；
+2. 解压到你所用 Agent 的全局 skills 目录（确保 `cmic-ppt` 目录下直接能看到 `SKILL.md`，常见路径如 `~/.workbuddy/skills/cmic-ppt`、`~/.claude/skills/cmic-ppt`、`~/.codex/skills/cmic-ppt`、`~/.cursor/skills/cmic-ppt` 等；支持界面导入的客户端可直接导入压缩包）；
+3. 进入解压后的 `cmic-ppt` 目录，在终端执行一次依赖安装与自检：
    ```powershell
-   pip install -r "$HOME\.workbuddy\skills\cmic-ppt\requirements.txt"
-   python "$HOME\.workbuddy\skills\cmic-ppt\scripts\ppt_cli.py" check-env
+   pip install -r requirements.txt
+   python scripts/ppt_cli.py check-env
    ```
-   看到 `[OK] 环境完全就绪` 后，重启或刷新 WorkBuddy 即可生效。
+   看到 `[OK] 环境完全就绪` 后，重启或刷新当前 Agent 即可生效。
 
 ---
 
-## 四、同事日常怎么用（直接复制的话术）
+## 四、日常怎么用（直接复制的话术）
 
-安装完成后，在 WorkBuddy 对话框里像和同事沟通一样下指令即可，**不需要记任何命令**：
+安装完成后，在你常用的 AI Agent 对话框里像和同事沟通一样下指令即可，**不需要记任何命令**：
 
 ### 场景 1：把现有方案 / 旧 PPT 重做成新版汇报
 > 把这份文件（或直接粘贴文字）用 `cmic-ppt` 整理成 8 页汇报 PPT，风格选「中移白底标准汇报风」。**先给我输出《逐页文字与版式确认表》，等我改完字再生成 `.pptx`。**
